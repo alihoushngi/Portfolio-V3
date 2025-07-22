@@ -10,6 +10,7 @@ const Info = () => {
         aria-label="my image"
         className="w-56 -mt-32"
         width={1080}
+        loading="lazy"
       />
       <h1 className="font-bold text-2xl mt-5 uppercase w-full text-left">
         Ali Hooshangi

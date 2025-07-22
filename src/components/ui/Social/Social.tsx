@@ -21,6 +21,7 @@ const Social = () => {
             aria-label="mail icon"
             width={1080}
             className="w-48 z-10 relative"
+            loading="lazy"
           />
         </div>
         <div className="-mt-16 ps-1 z-20 relative flex flex-col gap-2 w-full">
@@ -42,6 +43,7 @@ const Social = () => {
             aria-label="mail icon"
             width={1080}
             className="w-28 z-10 relative"
+            loading="lazy"
           />
         </div>
         <div className="-mt-16 ps-1 z-20 relative flex flex-col gap-2 w-full">
@@ -63,6 +65,7 @@ const Social = () => {
             aria-label="mail icon"
             width={1080}
             className="w-56 z-10 relative"
+            loading="lazy"
           />
         </div>
         <div className="-mt-16 ps-1 z-20 relative flex flex-col gap-2">
