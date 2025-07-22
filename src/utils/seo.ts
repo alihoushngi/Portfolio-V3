@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const defaultMetadata: Metadata = {
-  title: "Next Base | Skip setup. Start building. ⚡ | Ali Hooshangi",
+  title: "Ali Hooshangi | Frontend Developer",
   description:
     "A powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.",
   manifest: "/manifest.webmanifest",
