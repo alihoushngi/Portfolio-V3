@@ -1,5 +1,5 @@
+import infoImage from "@/assets/Images/MyAnimateImage2.webp";
 import Image from "next/image";
-import infoImage from "../../../../public/Images/MyAnimateImage2.png";
 
 const Info = () => {
   return (

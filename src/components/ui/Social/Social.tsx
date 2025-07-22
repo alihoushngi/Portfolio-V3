@@ -1,6 +1,6 @@
-import FacebookIcon from "@/assets/icons/FaceBook.png";
-import GithubIcon from "@/assets/icons/Github.png";
-import MailIcon from "@/assets/icons/MailIcon.png";
+import FacebookIcon from "@/assets/icons/FaceBook.webp";
+import GithubIcon from "@/assets/icons/Github.webp";
+import MailIcon from "@/assets/icons/MailIcon.webp";
 import Image from "next/image";
 import Link from "next/link";
 
