@@ -8,7 +8,7 @@ const Social = () => {
   return (
     <div className="w-2/4 flex flex-wrap justify-start gap-4 relative z-20">
       <Link
-        href="mailto:aliihooshangi@gmail.com"
+        href="mailto:aliiihoushangiii@gmail.com"
         rel="noopener noreferrer"
         aria-label="send me a message in email"
         className="w-[55%] relative z-20 bg-[#143061] rounded-[35px] p-6 overflow-hidden flex flex-col gap-10"
@@ -25,7 +25,7 @@ const Social = () => {
         </div>
         <div className="-mt-16 ps-1 z-20 relative flex flex-col gap-2 w-full">
           <span className="text-base font-semibold">Email</span>
-          <h2 className="font-normal text-sm">aliihooshangi@gmail.com</h2>
+          <h2 className="font-normal text-sm">aliiihoushangiii@gmail.com</h2>
         </div>
       </Link>
       <Link
