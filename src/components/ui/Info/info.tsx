@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Info = () => {
   return (
-    <div className="bg-[#2F3D59] bg-gradient-to-b from-[#2F3D59] to-[#0B1326] px-14 pt-4 pb-9 mt-28 relative z-20 rounded-[50px] flex flex-col justify-center items-center w-1/3">
+    <div className="bg-[#11324D] bg-gradient-to-b from-[#162938] to-[#131824] px-14 pt-4 pb-9 mt-28 relative z-20 rounded-[50px] flex flex-col justify-center items-center w-1/3">
       <Image
         src={infoImage}
         alt="my image"
