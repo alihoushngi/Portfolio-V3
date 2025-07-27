@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -8,6 +7,9 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "1mb",
       allowedOrigins: ["*"],
     },
+  },
+  images: {
+    domains: ["images.unsplash.com"],
   },
   async headers() {
     return [

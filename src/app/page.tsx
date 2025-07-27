@@ -1,5 +1,6 @@
 import About from "@/components/ui/About/About";
 import Info from "@/components/ui/Info/info";
+import Project from "@/components/ui/Project/Project";
 import Social from "@/components/ui/Social/Social";
 
 export default function Home() {
@@ -11,10 +12,10 @@ export default function Home() {
         <About />
       </div>
       <div className="flex justify-start items-start w-full gap-6">
-        <div className="bg-gradient-to-b from-[#274354] to-[#0d2432] px-12 py-6 relative z-20 rounded-[40px] flex flex-col justify-center items-center w-1/2 h-[32vh]"></div>
+        <Project />
         <div className="w-1/2 flex gap-6">
-          <div className="bg-[#2F3D59] bg-gradient-to-b from-[#2F3D59] to-[#0B1326] px-12 py-6 relative z-20 rounded-[40px] flex flex-col justify-center items-center w-1/2 h-[32vh]"></div>
-          <div className="bg-gradient-to-r from-[#802e2e] to-[#710e0e] px-12 py-6 relative z-20 rounded-[40px] flex flex-col justify-center items-center w-1/2 h-[32vh]"></div>
+          <div className="bg-gradient-to-bl from-[#221d37] to-[#0a0920] px-12 py-6 relative z-20 rounded-[40px] flex flex-col justify-center items-center w-1/2 h-[32vh]"></div>
+          <div className="bg-gradient-to-r from-[#0f2723] to-[#102925] px-12 py-6 relative z-20 rounded-[40px] flex flex-col justify-center items-center w-1/2 h-[32vh]"></div>
         </div>
       </div>
     </div>

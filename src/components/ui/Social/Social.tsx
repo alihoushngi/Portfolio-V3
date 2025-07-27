@@ -34,7 +34,7 @@ const Social = () => {
         href="mailto:aliihooshangi@gmail.com"
         rel="noopener noreferrer"
         aria-label="See Ali Hooshangi Instagram"
-        className="w-[48%] relative z-20 bg-gradient-to-b from-[#3c1919] to-[#3f1515] rounded-[35px] p-6 overflow-hidden flex flex-col gap-10 justify-between"
+        className="w-[48%] relative z-20 bg-gradient-to-b from-[#2b193c] to-[#2b153f] rounded-[35px] p-6 overflow-hidden flex flex-col gap-10 justify-between"
       >
         <div className="absolute -top-8 -right-8 bg-gradient-to-r from-white to-[#FFD1E3] opacity-20 rounded-full blur-3xl pointer-events-none"></div>
         <div className="flex items-start justify-between z-10 relative w-full">
