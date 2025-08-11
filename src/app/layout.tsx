@@ -33,7 +33,7 @@ export default function RootLayout({
         <div className="w-80 h-48 bg-[#F37261] absolute -left-28 -top-20 blur-[150px] rounded-full z-10"></div>
         <RegisterSW />
         <Suspense fallback={null}>
-          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <I18nProvider>{children}</I18nProvider>
           </ThemeProvider>
         </Suspense>
