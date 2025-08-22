@@ -158,10 +158,15 @@ module.exports = {
       },
 
       fontSize: {
-        body: "1rem",
-        heading: "1.875rem",
-        subheading: "1.25rem",
-        small: "0.875rem",
+        1: "14px",
+        2: "16px",
+        3: "18px",
+        4: "20px",
+        5: "24px",
+        6: "30px",
+        7: "36px",
+        8: "48px",
+        9: "60px",
       },
 
       spacing: {
