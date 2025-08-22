@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import plugin from "tailwindcss/plugin";
+
 module.exports = {
   darkMode: "class",
   content: [
@@ -202,5 +205,79 @@ module.exports = {
     },
   },
 
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents, theme }) {
+      addComponents({
+        ".btn": {
+          padding: "10px 12px",
+          borderRadius: theme("borderRadius.default"),
+          fontWeight: "100",
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          transition: "all 0.2s ease",
+          border: "1px solid transparent",
+          boxSizing: "border-box",
+        },
+
+        ".btn-primary": {
+          backgroundColor: theme("colors.Primary.Orange.300_Main"),
+          color: theme("colors.black"),
+          "&:hover": {
+            backgroundColor: theme("colors.Primary.Orange.200"),
+          },
+        },
+
+        ".btn-secondary": {
+          backgroundColor: theme("colors.Appearance.Slate.600"),
+          color: theme("colors.white"),
+          "&:hover": {
+            backgroundColor: theme("colors.Appearance.Slate.500"),
+          },
+        },
+
+        ".btn-outline": {
+          border: `1px solid ${theme("colors.Appearance.Slate.50")}`,
+          color: theme("colors.Appearance.Slate.50"),
+          backgroundColor: "transparent",
+          "&:hover": {
+            backgroundColor: theme("colors.Appearance.Slate.800"),
+            border: `1px solid ${theme("colors.Appearance.Slate.800")}`,
+            color: theme("colors.white"),
+          },
+        },
+
+        ".btn-success": {
+          backgroundColor: theme("colors.Success.Green.500_Main"),
+          color: theme("colors.white"),
+          "&:hover": {
+            backgroundColor: theme("colors.Success.Green.400"),
+          },
+        },
+
+        ".btn-error": {
+          backgroundColor: theme("colors.Error.Red.500_Main"),
+          color: theme("colors.white"),
+          "&:hover": {
+            backgroundColor: theme("colors.Error.Red.400"),
+          },
+        },
+
+        ".btn-warning": {
+          backgroundColor: theme("colors.Info.Yellow.500_Main"),
+          color: theme("colors.white"),
+          "&:hover": {
+            backgroundColor: theme("colors.Info.Yellow.400"),
+          },
+        },
+
+        ".btn-disable": {
+          backgroundColor: theme("colors.Appearance.Slate.800"),
+          color: theme("colors.Appearance.Slate.500"),
+          cursor: "not-allowed",
+          pointerEvents: "none",
+        },
+      });
+    }),
+  ],
 };
