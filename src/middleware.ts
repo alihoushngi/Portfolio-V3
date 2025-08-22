@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { NextResponse, type NextRequest } from "next/server";
 import { createSecureHeaders } from "next-secure-headers";
+import { NextResponse, type NextRequest } from "next/server";
 
 export function middleware(_request: NextRequest) {
   const response = NextResponse.next();
