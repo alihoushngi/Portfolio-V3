@@ -4,7 +4,7 @@ import { Toaster } from "react-hot-toast";
 
 import { FiraCodeFont, VazirFont } from "@/app/font";
 import RegisterSW from "@/components/layout/RegisterSW";
-import I18nProvider from "@/components/shared/I18n/I18nProvider";
+import I18nProvider from "@/components/shared/Lang/I18n/I18nProvider";
 
 import "@/styles/globals.css";
 import { defaultMetadata } from "@/utils/seo";
