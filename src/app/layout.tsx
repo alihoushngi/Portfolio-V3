@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "react-hot-toast";
 
-import { PoppinsFont, VazirFont } from "@/app/font";
+import { FiraCodeFont, VazirFont } from "@/app/font";
 import RegisterSW from "@/components/layout/RegisterSW";
 import I18nProvider from "@/components/shared/I18n/I18nProvider";
 
@@ -22,7 +22,7 @@ export default function RootLayout({
       lang="en"
       dir="ltr"
       suppressHydrationWarning
-      className={`${PoppinsFont.variable} ${VazirFont.variable}`}
+      className={`${FiraCodeFont.variable} ${VazirFont.variable}`}
     >
       <head>
         <link rel="manifest" href="/manifest.json" />

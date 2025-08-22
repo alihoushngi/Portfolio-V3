@@ -47,7 +47,7 @@ module.exports = {
       // 🔤 Font families for typography
       fontFamily: {
         sans: ["Inter", "sans-serif"], // Main body font
-        heading: ["Poppins", "sans-serif"], // Heading font
+        heading: ["FiraCodeFont", "sans-serif"], // Heading font
       },
 
       // 🔠 Custom font sizes

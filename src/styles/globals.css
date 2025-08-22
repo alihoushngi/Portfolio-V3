@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-family: var(--font-poppins);
+  font-family: var(--font-fira-code);
 }
 
 html.font-fa {
