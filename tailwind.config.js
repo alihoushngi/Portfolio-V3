@@ -183,9 +183,10 @@ module.exports = {
       },
 
       borderRadius: {
-        btn: "0.5rem",
-        card: "1rem",
-        input: "0.375rem",
+        checkboxes: "2px",
+        icon_boxes: "4px",
+        default: "8px",
+        cards: "16px",
       },
 
       boxShadow: {
