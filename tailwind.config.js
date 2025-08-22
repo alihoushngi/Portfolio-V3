@@ -165,10 +165,16 @@ module.exports = {
       },
 
       spacing: {
-        layout: "2rem",
-        section: "1.5rem",
-        element: "1rem",
-        gap: "0.75rem",
+        1: "2px",
+        2: "4px",
+        3: "8px",
+        4: "12px",
+        5: "16px",
+        6: "24px",
+        7: "32px",
+        8: "40px",
+        9: "48px",
+        10: "64px",
       },
 
       borderRadius: {
