@@ -29,7 +29,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#317EFB" />
         <link rel="icon" href="/icons/icon-192x192.png" />
       </head>
-      <body className="">
+      <body>
         <RegisterSW />
         <Suspense fallback={null}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>

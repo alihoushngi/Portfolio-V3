@@ -191,17 +191,6 @@ module.exports = {
         default: "8px",
         cards: "16px",
       },
-
-      boxShadow: {
-        soft: "0 1px 2px rgba(0,0,0,0.05)",
-        medium: "0 4px 6px rgba(0,0,0,0.1)",
-        strong: "0 10px 15px rgba(0,0,0,0.2)",
-        focus: "0 0 0 3px rgba(37, 99, 235, 0.5)",
-      },
-
-      transitionDuration: {
-        DEFAULT: "200ms",
-      },
     },
   },
 
