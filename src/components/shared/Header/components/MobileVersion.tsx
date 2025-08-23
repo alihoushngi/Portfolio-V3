@@ -1,5 +1,8 @@
 import { IHeaderProps } from "@/components/shared/Header/assets/header.type";
-import { firstMenuItems } from "@/components/shared/Header/assets/items";
+import {
+  firstMenuItems,
+  secondMenuItems,
+} from "@/components/shared/Header/assets/items";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
@@ -35,6 +38,20 @@ const MobileVersion = ({ pathname }: IHeaderProps) => {
                 # navigate:
               </span>
               {firstMenuItems.map((item, index) => {
+                if (!item.disable) {
+                  return (
+                    <Link
+                      href={item.url}
+                      key={index}
+                      className={`${pathname === item.url && "border-b-2 border-b-Primary-Orange-300_Main"} w-full transition-all duration-200 ease-in-out py-4 px-6 border-b border-Appearance-Slate-700 text-white`}
+                      onClick={() => setIsOpen(!isOpen)}
+                    >
+                      {item.title}
+                    </Link>
+                  );
+                }
+              })}
+              {secondMenuItems.map((item, index) => {
                 if (!item.disable) {
                   return (
                     <Link
