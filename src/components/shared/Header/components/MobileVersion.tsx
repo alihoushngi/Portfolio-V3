@@ -43,7 +43,7 @@ const MobileVersion = ({ pathname }: IHeaderProps) => {
                     <Link
                       href={item.url}
                       key={index}
-                      className={`${pathname === item.url && "border-b-2 border-b-Primary-Orange-300_Main"} w-full transition-all duration-200 ease-in-out py-4 px-6 border-b border-Appearance-Slate-700 text-white`}
+                      className={`${pathname === item.url && "border-b-2 border-b-Primary-Orange-300_Main text-Primary-Orange-300_Main"} w-full transition-all duration-200 ease-in-out py-4 px-6 border-b border-Appearance-Slate-700 text-white`}
                       onClick={() => setIsOpen(!isOpen)}
                     >
                       {item.title}
@@ -57,7 +57,7 @@ const MobileVersion = ({ pathname }: IHeaderProps) => {
                     <Link
                       href={item.url}
                       key={index}
-                      className={`${pathname === item.url && "border-b-2 border-b-Primary-Orange-300_Main"} w-full transition-all duration-200 ease-in-out py-4 px-6 border-b border-Appearance-Slate-700 text-white`}
+                      className={`${pathname === item.url && "border-b-2 border-b-Primary-Orange-300_Main text-Primary-Orange-300_Main"} w-full transition-all duration-200 ease-in-out py-4 px-6 border-b border-Appearance-Slate-700 text-white`}
                       onClick={() => setIsOpen(!isOpen)}
                     >
                       {item.title}
