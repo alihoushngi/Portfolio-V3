@@ -17,7 +17,7 @@ const DesktopVersion = ({ pathname }: IHeaderProps) => {
                 <Link
                   href={item.url}
                   key={index}
-                  className={`${pathname === item.url && "border-b-2 border-b-Primary-Orange-300_Main"} transition-all duration-200 ease-in-out py-4 px-7 border-r border-l border-Appearance-Slate-700`}
+                  className={`${pathname === item.url ? "border-b-2 border-b-Primary-Orange-300_Main text-Primary-Orange-300_Main" : "border-b-2 border-b-transparent"} hover:border-b-2 hover:border-b-Primary-Orange-300_Main hover:text-Primary-Orange-300_Main transition-all duration-200 ease-in-out py-4 px-7 border-r border-l border-Appearance-Slate-700`}
                 >
                   {item.title}
                 </Link>
@@ -33,7 +33,7 @@ const DesktopVersion = ({ pathname }: IHeaderProps) => {
               <Link
                 href={item.url}
                 key={index}
-                className={`${pathname === item.url && "border-b-2 border-b-Primary-Orange-300_Main"} transition-all duration-200 ease-in-out py-4 px-7 border-l border-Appearance-Slate-700`}
+                className={`${pathname === item.url ? "border-b-2 border-b-Primary-Orange-300_Main text-Primary-Orange-300_Main" : "border-b-2 border-b-transparent"} hover:border-b-2 hover:border-b-Primary-Orange-300_Main hover:text-Primary-Orange-300_Main transition-all duration-200 ease-in-out py-4 px-7 border-l border-Appearance-Slate-700`}
               >
                 {item.title}
               </Link>
