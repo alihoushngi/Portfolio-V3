@@ -6,6 +6,7 @@ import { FiraCodeFont, VazirFont } from "@/app/font";
 import RegisterSW from "@/components/layout/RegisterSW";
 import I18nProvider from "@/components/shared/Lang/I18n/I18nProvider";
 
+import Layout from "@/components/layout/Layout";
 import "@/styles/globals.css";
 import { defaultMetadata } from "@/utils/seo";
 import { Suspense } from "react";
@@ -22,7 +23,7 @@ export default function RootLayout({
       lang="en"
       dir="ltr"
       suppressHydrationWarning
-      className={`${FiraCodeFont.variable} ${VazirFont.variable}`}
+      className={`${FiraCodeFont.variable} ${VazirFont.variable} dark:bg-slate-950`}
     >
       <head>
         <link rel="manifest" href="/manifest.json" />
@@ -33,7 +34,9 @@ export default function RootLayout({
         <RegisterSW />
         <Suspense fallback={null}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            <I18nProvider>{children}</I18nProvider>
+            <I18nProvider>
+              <Layout>{children}</Layout>
+            </I18nProvider>
           </ThemeProvider>
         </Suspense>
         <Toaster />
