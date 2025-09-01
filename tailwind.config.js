@@ -166,9 +166,21 @@ module.exports = {
             boxShadow: "0 0 10px 8px #43d9ad33",
           },
         },
+        snakeWave: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1)" },
+        },
+        headPulse: {
+          "0%": { boxShadow: "0 0 8px 2px #43d9ad" },
+          "50%": { boxShadow: "0 0 12px 4px #43d9ad" },
+          "100%": { boxShadow: "0 0 8px 2px #43d9ad" },
+        },
       },
       animation: {
         "bounce-halo": "bounce-halo 1.5s infinite",
+        snakeWave: "snakeWave 0.5s ease-in-out infinite",
+        headPulse: "headPulse 0.5s ease-in-out infinite",
       },
 
       backgroundImage: {
@@ -178,7 +190,7 @@ module.exports = {
           rgba(67, 217, 173, 0.13) 100%
         )`,
         "bolt-radial": `radial-gradient(circle, #164c51 15%, #0D3A40 100%)`,
-        "snake-gradient": `linear-gradient(180deg, #43D9AD 0%, #43D9AD20 70%, #43D9AD10 100%)`,
+        "snake-gradient": `linear-gradient(180deg, #43D9AD 30%, #43D9AD10 100%)`,
       },
 
       boxShadow: {
