@@ -155,6 +155,53 @@ module.exports = {
         },
       },
 
+      keyframes: {
+        "bounce-halo": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+            boxShadow: "0 0 5px 4px #43d9ad66",
+          },
+          "50%": {
+            transform: "translateY(-20%)",
+            boxShadow: "0 0 10px 8px #43d9ad33",
+          },
+        },
+        snakeWave: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1)" },
+        },
+        headPulse: {
+          "0%": { boxShadow: "0 0 8px 2px #43d9ad" },
+          "50%": { boxShadow: "0 0 12px 4px #43d9ad" },
+          "100%": { boxShadow: "0 0 8px 2px #43d9ad" },
+        },
+      },
+      animation: {
+        "bounce-halo": "bounce-halo 1.5s infinite",
+        snakeWave: "snakeWave 0.5s ease-in-out infinite",
+        headPulse: "headPulse 0.5s ease-in-out infinite",
+      },
+
+      backgroundImage: {
+        "glass-gradient": `linear-gradient(
+          180deg,
+          rgba(23, 85, 83, 0.8) 0%,
+          rgba(67, 217, 173, 0.13) 100%
+        )`,
+        "bolt-radial": `radial-gradient(circle, #164c51 15%, #0D3A40 100%)`,
+        "snake-gradient": `linear-gradient(180deg, #43D9AD 30%, #43D9AD10 100%)`,
+      },
+
+      boxShadow: {
+        "inner-white": "inset 0 2px 0 0 rgba(255, 255, 255, 0.3)",
+        bolt: "2px 2px 4px 0 #092D32, inset 0 1px 2px 0 #16645C",
+      },
+
+      backdropBlur: {
+        60: "60px",
+      },
+
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         heading: ["FiraCodeFont", "sans-serif"],
