@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const about = () => {
-  return <div></div>;
+  return <div>hello</div>;
 };
 
 export default about;
