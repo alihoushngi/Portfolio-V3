@@ -36,12 +36,15 @@ const DropDown: FC<IDropDownProps> = ({
         className="p-4 text-1 text-nowrap text-Appearance-Slate-50 border-b border-Appearance-Slate-700 cursor-pointer flex justify-start items-center gap-3"
         onClick={() => setIsOpen && setIsOpen(!isOpen)}
       >
-        <motion.div
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.2 }}
-        >
-          <FaCaretDown className="text-1" />
-        </motion.div>
+        {subItem && subItem?.length > 0 && (
+          <motion.div
+            animate={{ rotate: isOpen ? 180 : 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <FaCaretDown className="text-1" />
+          </motion.div>
+        )}
+
         <h3>{title}</h3>
       </div>
 
