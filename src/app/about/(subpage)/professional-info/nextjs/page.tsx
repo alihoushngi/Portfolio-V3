@@ -63,12 +63,12 @@ export const metadata: Metadata = {
 
 const NextJSJourney = () => {
   return (
-    <div className="nextjs-journey h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="nextjs-journey h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My Next.js Journey
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I began learning <strong className="font-semibold">Next.js</strong> via{" "}
         <strong className="font-semibold">
           <Link
@@ -145,7 +145,7 @@ const NextJSJourney = () => {
         <strong>Page Router</strong> and <strong>App Router</strong>.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I created a custom{" "}
         <strong className="font-semibold">Next.js CLI</strong> that scaffolds
         projects with a modern stack, including:
@@ -300,7 +300,7 @@ const NextJSJourney = () => {
         </li>
       </ul>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My hands-on experience now spans multiple Next.js versions from 10 to
         the latest, mastering SSR, SSG, ISR, API routes, dynamic routing, and
         performance optimization, allowing me to build scalable, maintainable,

@@ -52,12 +52,12 @@ export const metadata: Metadata = {
 
 const Education = () => {
   return (
-    <div className="education h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="education h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My Education
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I began my academic journey in Tehran, attending{" "}
         <strong className="font-semibold">Osveh Primary School</strong> and
         <strong className="font-semibold"> Feyzieh Middle School</strong>, where
@@ -67,7 +67,7 @@ const Education = () => {
         complemented my academic development.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         For high school, I moved to Rasht and enrolled in{" "}
         <strong className="font-semibold">Valiasr High School</strong> with a
         focus on <strong className="font-semibold">computer science</strong>.
@@ -76,7 +76,7 @@ const Education = () => {
         shared my interests in technology.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I continued my higher education at{" "}
         <strong className="font-semibold">
           <Link
@@ -105,7 +105,7 @@ const Education = () => {
         {"bachelor's"} degree over the following three semesters.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         During my academic journey, I combined hands-on experience in{" "}
         <strong className="font-semibold">hardware</strong> and{" "}
         <strong className="font-semibold">networking</strong> with software
@@ -147,7 +147,7 @@ const Education = () => {
         websites and applications.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My educational path reflects a balance between academic achievement,
         technical curiosity, and practical experience, laying the foundation for
         a career in technology that merges creativity, problem-solving, and

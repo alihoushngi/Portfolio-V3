@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const SecondarySideBar = () => {
   const pathname = usePathname();
   return (
-    <div className="h-full px-6 py-4 text-5 flex flex-col justify-start items-start gap-7 border-r border-Appearance-Slate-700">
+    <div className="md:min-h-full px-6 py-4 text-5 flex flex-col justify-start items-start gap-7 border-r border-Appearance-Slate-700 max-md:flex-row max-md:gap-4 max-md:text-3 max-md:px-4 max-md:py-4 max-md:border-r-0 max-md:border-b">
       {SecondarySideBarList.map((item, index) => {
         return (
           <Link key={index} href={item.link} aria-label={item.name}>

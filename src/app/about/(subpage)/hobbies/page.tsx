@@ -53,12 +53,12 @@ export const metadata: Metadata = {
 
 const Hobbies = () => {
   return (
-    <div className="hobbies h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="hobbies h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My Hobbies & Interests
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My hobbies reflect a blend of physical activity, technology, creativity,
         and continuous learning. Since childhood, I have been passionate about{" "}
         <strong className="font-semibold">football</strong>, participating in
@@ -69,7 +69,7 @@ const Hobbies = () => {
         constant driving force in my life.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I enjoy creating projects that merge{" "}
         <strong className="font-semibold">hardware and software</strong> to
         develop useful tools that simplify daily life. This includes home
@@ -79,7 +79,7 @@ const Hobbies = () => {
         in Iran, exploring culture, history, and local innovations.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         In addition, I am deeply interested in{" "}
         <strong className="font-semibold">reading books</strong>, learning about{" "}
         <strong className="font-semibold">history</strong>, and expanding my
@@ -89,7 +89,7 @@ const Hobbies = () => {
         fuel my creativity and problem-solving abilities.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Sharing knowledge and teaching others is another passion of mine. I
         often engage in mentoring and creating educational content, combining my
         interests in <strong className="font-semibold">technology</strong> and{" "}
@@ -97,7 +97,7 @@ const Hobbies = () => {
         others grow.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Overall, my hobbies and interests are diverse but interconnected,
         reflecting my love for exploration, creativity, and continuous personal
         growth.

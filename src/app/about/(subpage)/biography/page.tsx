@@ -52,12 +52,12 @@ export const metadata: Metadata = {
 
 const Biography = () => {
   return (
-    <div className="biography h-[70vh] overflow-y-auto text-Appearance-Slate-400 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="biography h-[70vh] overflow-y-auto text-Appearance-Slate-400 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         Ali Hooshangi Biography
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My name is <strong className="font-semibold">Ali Hooshangi</strong>,
         born on
         <strong className="font-semibold"> August 7, 1999</strong> (16 Mordad
@@ -72,7 +72,7 @@ const Biography = () => {
         experiment while enjoying my favorite games.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Growing up, I developed a passion for{" "}
         <strong className="font-semibold">football</strong> and joined youth
         teams in Tehran, including the{" "}
@@ -82,7 +82,7 @@ const Biography = () => {
         me towards technology and engineering.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         During high school, my family moved back to{" "}
         <strong className="font-semibold">Rasht</strong>, where I continued my
         studies and started focusing more seriously on technology. Although
@@ -92,7 +92,7 @@ const Biography = () => {
         and deepened my interest in programming and hardware.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         After high school, I scored an impressive{" "}
         <strong className="font-semibold">rank of 1500</strong> in the national
         university entrance exam in Iran, which allowed me to join the{" "}
@@ -108,7 +108,7 @@ const Biography = () => {
         wife.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Upon returning to Rasht, I completed my{" "}
         <strong className="font-semibold">bachelors degree</strong> and got
         married to Ayda. Later, I served in the military and, upon completing my
@@ -117,7 +117,7 @@ const Biography = () => {
         independently, continuously learning and growing in the field I love.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My professional journey began with hands-on work in{" "}
         <strong className="font-semibold">hardware</strong> and{" "}
         <strong className="font-semibold">networking</strong>, which gave me a
@@ -176,7 +176,7 @@ const Biography = () => {
         experiences.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Beyond development, I am deeply passionate about{" "}
         <strong className="font-semibold">mentoring young developers</strong>,
         producing <strong className="font-semibold">educational content</strong>
@@ -187,7 +187,7 @@ const Biography = () => {
         alike.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I continue to embrace curiosity, innovation, and continuous learning as
         the guiding principles of my life and career, just as I did from the
         very first day I explored the world around me.

@@ -24,7 +24,7 @@ const MobileVersion = ({ pathname }: IHeaderProps) => {
             animate={{ height: "96vh", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-5 left-5 right-5 bottom-5 bg-Appearance-Slate-950 z-10 overflow-hidden"
+            className="fixed top-5 left-5 right-5 bottom-5 bg-Appearance-Slate-950 z-50 overflow-hidden"
           >
             <div className="border border-Appearance-Slate-700 h-full rounded-default flex flex-col justify-start items-center">
               <div className="flex justify-between items-center text-Appearance-Slate-400 text-1 w-full border-b border-Appearance-Slate-700 p-5">

@@ -53,12 +53,12 @@ export const metadata: Metadata = {
 
 const ProfessionalInfo = () => {
   return (
-    <div className="professional-info h-[70vh] overflow-y-auto text-Appearance-Slate-400 text-justify">
-      <h1 className="text-3xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="professional-info h-[70vh] overflow-y-auto text-Appearance-Slate-400 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         Professional Expertise
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I have extensive experience in frontend technologies, including{" "}
         <strong className="font-semibold">
           <Link
@@ -107,7 +107,7 @@ const ProfessionalInfo = () => {
         modern web standards.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My development workflow incorporates{" "}
         <strong className="font-semibold">version control with Git</strong>,{" "}
         <strong className="font-semibold">unit and integration testing</strong>,
@@ -120,7 +120,7 @@ const ProfessionalInfo = () => {
         all projects to provide the best user experience possible.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Over the years, I have worked on a wide range of projects, including
         high-traffic web applications, e-commerce platforms, corporate websites,
         and interactive dashboards. I focus on creating clean, modular, and
@@ -128,7 +128,7 @@ const ProfessionalInfo = () => {
         to maintain and scale for future updates.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Beyond writing code, I actively contribute to the web development
         community through mentoring junior developers, producing educational
         content, and sharing insights about web performance, modern workflows,
@@ -137,7 +137,7 @@ const ProfessionalInfo = () => {
         innovative, user-centric solutions.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I aim to combine technical expertise, creativity, and best practices to
         build websites and applications that provide meaningful, engaging, and
         high-performing experiences for both clients and end users. From
