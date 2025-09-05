@@ -3,14 +3,28 @@
 import { FirstSideBarItems } from "@/components/shared/About/FirstSideBar/FirstSideBarList";
 import DropDown from "@/components/ui/DropDown/DropDown";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const FirstSideBar = () => {
   const pathname = usePathname();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = window.matchMedia("(max-width: 768px)");
+    setIsMobile(check.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    check.addEventListener("change", handler);
+    return () => check.removeEventListener("change", handler);
+  }, []);
+
   const [isOpen, setIsOpen] = useState(true);
 
+  useEffect(() => {
+    setIsOpen(isMobile ? false : true);
+  }, [isMobile]);
+
   return (
-    <div className="border-r border-Appearance-Slate-700 min-w-[12.5rem]">
+    <div className="border-r border-Appearance-Slate-700 min-w-[12.5rem] md:min-h-full max-md:border-r-0">
       {FirstSideBarItems.map((item, index) => {
         const match =
           pathname === item.link ||

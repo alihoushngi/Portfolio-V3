@@ -52,12 +52,12 @@ export const metadata: Metadata = {
 
 const JS = () => {
   return (
-    <div className="js-journey h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="js-journey h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My JavaScript & Frontend Journey
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My journey in web development started in 1400 with learning{" "}
         <strong className="font-semibold">HTML</strong>,{" "}
         <strong className="font-semibold">CSS</strong>, and{" "}
@@ -78,7 +78,7 @@ const JS = () => {
         fundamentals.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Later, I joined{" "}
         <strong className="font-semibold">
           <Link
@@ -115,7 +115,7 @@ const JS = () => {
         .
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Alongside JavaScript, I learned{" "}
         <strong className="font-semibold">Tailwind CSS</strong> and{" "}
         <strong className="font-semibold">Bootstrap</strong> through their
@@ -123,7 +123,7 @@ const JS = () => {
         and modern UI development.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I built numerous practice projects to reinforce my skills, experimenting
         with DOM manipulation, interactive elements, and small web applications.
         These exercises formed a solid foundation for my later work in{" "}
@@ -151,7 +151,7 @@ const JS = () => {
         development.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         This structured approach of combining online tutorials, practical
         exercises, and mentorship helped me grow from a beginner to a confident
         frontend developer, capable of creating responsive, interactive, and

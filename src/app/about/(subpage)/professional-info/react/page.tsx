@@ -51,12 +51,12 @@ export const metadata: Metadata = {
 
 const ReactJourney = () => {
   return (
-    <div className="react-journey h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="react-journey h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My React & TypeScript Journey
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I started learning <strong className="font-semibold">React.js</strong>{" "}
         and <strong className="font-semibold">TypeScript</strong> through a
         combination of online courses and self-study. I mainly used resources
@@ -75,7 +75,7 @@ const ReactJourney = () => {
         best practices.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         While working at{" "}
         <strong className="font-semibold">
           <Link
@@ -98,7 +98,7 @@ const ReactJourney = () => {
         safety and maintainable code.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         This experience gave me hands-on exposure to frontend architecture,
         component-based design, state management, and the practical challenges
         of delivering a professional React application. It laid the foundation
