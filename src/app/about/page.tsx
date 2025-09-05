@@ -48,11 +48,11 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         About Me
       </h1>
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Hello, I&apos;m <strong className="font-semibold">Ali Hooshangi</strong>
         , a frontend developer and web designer with over{" "}
         <strong className="font-semibold">
@@ -67,7 +67,7 @@ const About = () => {
         </strong>{" "}
         that deliver seamless user experiences.
       </p>
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Throughout my career, I have continuously expanded my skill set,
         specializing in{" "}
         <strong className="font-semibold">
@@ -107,10 +107,10 @@ const About = () => {
         clean, modular code with creative design to create solutions that are
         functional, fast-loading, and enjoyable to use.
       </p>
-      <h2 className="text-2xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+      <h2 className="text-2xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My Expertise
       </h2>
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I have delivered projects ranging from simple landing pages to complex
         React-based platforms. My expertise includes{" "}
         <strong className="font-semibold">performance optimization</strong>,{" "}
@@ -120,10 +120,10 @@ const About = () => {
         integrate APIs, implement dynamic functionalities, and ensure every
         project meets modern accessibility and web standards.
       </p>
-      <h2 className="text-2xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+      <h2 className="text-2xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         Technologies & Skills
       </h2>
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My technical stack includes{" "}
         <strong className="font-semibold">
           <Link
@@ -183,20 +183,20 @@ const About = () => {
         follow modern workflows including version control, testing, deployment,
         and prioritize maintainable, reusable, and scalable code architectures.
       </p>
-      <h2 className="text-2xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+      <h2 className="text-2xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My Philosophy
       </h2>
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I am passionate about mentoring junior developers, creating educational
         content, and sharing insights on web development trends, SEO, and
         performance optimization. I believe in continuous learning and adapting
         to emerging technologies to craft innovative and user-centered
         solutions.
       </p>
-      <h2 className="text-2xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+      <h2 className="text-2xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My Goal
       </h2>
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My ultimate goal is to combine technical expertise, creativity, and best
         practices to deliver websites and applications that are fast,
         functional, and engaging. I am dedicated, detail-oriented, and committed

@@ -50,12 +50,12 @@ export const metadata: Metadata = {
 
 const Interests = () => {
   return (
-    <div className="interests h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify">
-      <h1 className="text-4xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
+    <div className="interests h-[70vh] overflow-y-auto text-Appearance-Slate-400 px-4 text-justify max-md:text-left max-md:px-0">
+      <h1 className="text-4xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
         My Interests & Passions
       </h1>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Beyond web development and frontend design, I have a diverse range of
         interests that shape my life and work.{" "}
         <strong className="font-semibold">Football</strong> has been a lifelong
@@ -64,7 +64,7 @@ const Interests = () => {
         and strategic thinking.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         <strong className="font-semibold">Technology</strong> plays a central
         role in my life. I enjoy exploring new devices,{" "}
         <strong className="font-semibold">DIY electronics</strong>, and{" "}
@@ -76,7 +76,7 @@ const Interests = () => {
         skills, creativity, and reflexes.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         I am an avid reader, particularly fascinated by{" "}
         <strong className="font-semibold">history</strong>, technology, and
         design literature. Traveling to different cities across Iran has
@@ -85,7 +85,7 @@ const Interests = () => {
         <strong className="font-semibold">interior design</strong> styles.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         My curiosity drives me to continuously learn new skills, even outside my
         core expertise. I enjoy creating practical devices that enhance daily
         life, exploring new{" "}
@@ -95,7 +95,7 @@ const Interests = () => {
         content is also central to my personal mission.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         Overall, my interests in{" "}
         <strong className="font-semibold">technology</strong>,{" "}
         <strong className="font-semibold">football</strong>,{" "}
@@ -107,7 +107,7 @@ const Interests = () => {
         innovative solutions and a fulfilling life.
       </p>
 
-      <p className="text-1 mb-4">
+      <p className="text-1 mb-4 max-md:text-xs">
         If you want to learn more about the technologies I use in my projects,
         you can explore{" "}
         <strong className="font-semibold">

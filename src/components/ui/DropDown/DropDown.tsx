@@ -2,7 +2,7 @@ import { IDropDownProps } from "@/components/ui/DropDown/DropDownTypes";
 import { useFileStore } from "@/store/fileStore";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { FaCaretDown } from "react-icons/fa6";
 import { MdPhoneIphone } from "react-icons/md";
 import { RiMailFill } from "react-icons/ri";
@@ -20,7 +20,21 @@ const DropDown: FC<IDropDownProps> = ({
   setIsOpen,
   pathname,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = window.matchMedia("(max-width: 768px)");
+    setIsMobile(check.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    check.addEventListener("change", handler);
+    return () => check.removeEventListener("change", handler);
+  }, []);
+
   const [isContactOpen, setIsContactOpen] = useState(true);
+
+  useEffect(() => {
+    setIsContactOpen(isMobile ? false : true);
+  }, [isMobile]);
 
   const tabHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const target = e.currentTarget;

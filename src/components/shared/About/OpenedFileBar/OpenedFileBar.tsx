@@ -42,7 +42,9 @@ const OpenedFileBar = () => {
   };
 
   return (
-    <div className="border-b border-Appearance-Slate-700 w-full text-1 min-h-[46px] flex gap-2">
+    <div
+      className={`max-md:${files.length <= 0 && "hidden"} border-b border-Appearance-Slate-700 w-full text-1 min-h-[46px] flex gap-2 overflow-x-auto max-md:text-xs max-md:min-h-0`}
+    >
       {files.map((file, index) => {
         const filePath = new URL(file.href, window.location.origin).pathname;
         const isActive = filePath === pathname;
@@ -51,7 +53,7 @@ const OpenedFileBar = () => {
           <Link
             href={file.href}
             key={index}
-            className="p-4 border-r border-Appearance-Slate-700 flex items-center justify-between gap-3 min-w-40"
+            className="p-4 border-r border-Appearance-Slate-700 flex items-center justify-between gap-3 min-w-40 max-md:min-w-28 "
           >
             <span
               className={
