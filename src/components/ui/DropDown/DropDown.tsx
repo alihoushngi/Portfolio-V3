@@ -1,4 +1,5 @@
 import { IDropDownProps } from "@/components/ui/DropDown/DropDownTypes";
+import { useFileStore } from "@/store/fileStore";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { FC, useState } from "react";
@@ -21,10 +22,18 @@ const DropDown: FC<IDropDownProps> = ({
 }) => {
   const [isContactOpen, setIsContactOpen] = useState(true);
 
+  const tabHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const target = e.currentTarget;
+    useFileStore.getState().addFile({
+      href: target.href,
+      accessKey: target.accessKey,
+    });
+  };
+
   return (
     <div className="flex flex-col overflow-hidden">
       <div
-        className="ps-4 py-4 text-1 text-nowrap text-Appearance-Slate-50 border-b border-Appearance-Slate-700 cursor-pointer flex justify-start items-center gap-3"
+        className="p-4 text-1 text-nowrap text-Appearance-Slate-50 border-b border-Appearance-Slate-700 cursor-pointer flex justify-start items-center gap-3"
         onClick={() => setIsOpen && setIsOpen(!isOpen)}
       >
         <motion.div
@@ -53,6 +62,8 @@ const DropDown: FC<IDropDownProps> = ({
                   key={index}
                   href={item.link}
                   className={`${item.link === pathname && "text-Appearance-Slate-50"} flex items-center gap-3 text-1 text-Appearance-Slate-400 font-light py-2`}
+                  onClick={tabHandler}
+                  accessKey={item.title}
                 >
                   {item.icon && <item.icon className={item.iconColor} />}
                   {item.title}
