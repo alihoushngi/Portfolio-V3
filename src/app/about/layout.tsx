@@ -5,10 +5,10 @@ import React from "react";
 
 const AboutLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className="w-full h-full flex justify-stretch items-stretch max-md:flex-col">
+    <section className="h-full flex justify-stretch items-stretch max-md:flex-col">
       <SecondarySideBar />
       <FirstSideBar />
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col">
         <OpenedFileBar />
         <div className="h-full">{children}</div>
       </div>

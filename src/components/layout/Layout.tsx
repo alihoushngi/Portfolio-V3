@@ -4,8 +4,8 @@ import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="p-7 max-md:p-5 bg-Appearance-Slate-950 min-h-screen h-screen max-md:h-full w-full">
-      <div className="border border-Appearance-Slate-700 min-h-full h-full rounded-default flex flex-col justify-between">
+    <div className="p-5 max-md:p-5 bg-Appearance-Slate-950 min-h-screen h-screen max-md:h-full w-full">
+      <div className="border border-Appearance-Slate-700 bg-Appearance-Slate-900 min-h-full h-full rounded-default flex flex-col justify-between">
         <Header />
         <main className="h-full w-full">{children}</main>
         <Footer />

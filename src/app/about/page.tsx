@@ -1,3 +1,4 @@
+import UtilityCodes from "@/components/ui/UtilityCodes/UtilityCodes";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -213,7 +214,7 @@ const About = () => {
       <div className="w-7 border-x h-full border-Appearance-Slate-700 p-2">
         <div className="w-full h-3 bg-Appearance-Slate-700" />
       </div>
-      <div className="w-1/2 px-6"></div>
+      <UtilityCodes />
       <div className="w-7 border-l h-full border-Appearance-Slate-700 p-2">
         <div className="w-full h-3 bg-Appearance-Slate-700" />
       </div>
