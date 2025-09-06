@@ -10,7 +10,7 @@ const AboutLayout = ({ children }: { children: React.ReactNode }) => {
       <FirstSideBar />
       <div className="flex flex-col w-full">
         <OpenedFileBar />
-        <div className="px-6 py-4 max-md:px-4 max-md:py-2">{children}</div>
+        <div className="h-full">{children}</div>
       </div>
     </section>
   );
