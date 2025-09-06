@@ -49,9 +49,9 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="max-md:px-4 max-md:py-2 w-full h-full flex">
-      <div className="w-1/2 h-full">
-        <div className="h-[72vh] overflow-y-auto text-Appearance-Slate-400 px-6 text-left max-md:px-4 max-md:py-2">
+    <div className="max-md:px-4 max-md:py-2 w-full h-full flex max-md:flex-col">
+      <div className="w-1/2 h-full max-md:w-full">
+        <div className="h-[72vh] overflow-y-auto text-Appearance-Slate-400 px-6 text-left max-md:px-4 max-md:py-2 max-md:w-full max-md:h-full">
           <h1 className="text-3xl font-bold mb-6 mt-4 max-md:mt-2 max-md:mb-4 text-Appearance-Slate-200 max-md:text-xl">
             About Me
           </h1>
@@ -211,11 +211,11 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="w-7 border-x h-full border-Appearance-Slate-700 p-2">
+      <div className="w-7 border-x h-full border-Appearance-Slate-700 p-2 max-md:hidden">
         <div className="w-full h-3 bg-Appearance-Slate-700" />
       </div>
       <UtilityCodes />
-      <div className="w-7 border-l h-full border-Appearance-Slate-700 p-2">
+      <div className="w-7 border-l h-full border-Appearance-Slate-700 p-2 max-md:hidden">
         <div className="w-full h-3 bg-Appearance-Slate-700" />
       </div>
     </div>

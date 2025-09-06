@@ -14,7 +14,7 @@ const UtilityCodes = () => {
   };
 
   return (
-    <div className="w-1/2 max-w-full px-6 flex flex-col h-[72vh]">
+    <div className="w-1/2 max-w-full px-6 flex max-md:px-2 flex-col h-[72vh] max-md:w-full max-md:h-full">
       <h2 className="text-xl font-bold mb-6 mt-4 text-Appearance-Slate-200">
         My Utility Codes
       </h2>
@@ -26,16 +26,18 @@ const UtilityCodes = () => {
             style={{ backgroundColor: "#020618", borderColor: "#314158" }}
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-4 py-2 border-b bg-Appearance-Slate-900 rounded-t-lg border-Appearance-Slate-700">
-              <div>
-                <p className="text-sm font-semibold text-gray-200">
+            <div className="flex max-md:flex-col items-center justify-between max-md:px-2 px-4 py-2 border-b bg-Appearance-Slate-900 rounded-t-lg border-Appearance-Slate-700 max-md:gap-2">
+              <div className="max-md:w-full max-md:overflow-y-auto">
+                <p className="text-sm font-semibold text-gray-200 max-md:mb-1 max-md:text-xs">
                   {item.title}.ts
                 </p>
-                <p className="text-xs text-gray-400">{item.description}</p>
+                <p className="text-xs text-gray-400 max-md:text-[10px]">
+                  {item.description}
+                </p>
               </div>
               <button
                 onClick={() => handleCopy(item.code, index)}
-                className="text-xs px-3 py-1 rounded-md bg-Appearance-Slate-700 text-gray-200 hover:opacity-80 transition"
+                className="text-xs px-3 py-1 max-md:w-full max-md:px-1 rounded-md bg-Appearance-Slate-700 text-gray-200 hover:opacity-80 transition"
               >
                 {copiedIndex === index ? "Copied!" : "Copy"}
               </button>
