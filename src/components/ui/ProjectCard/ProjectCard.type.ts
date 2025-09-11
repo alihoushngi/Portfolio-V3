@@ -5,4 +5,6 @@ export interface IProjectCardProps {
   ProjectImage: string | StaticImageData;
   ProjectDescription: string;
   ProjectTitle: string;
+  onClickButton?: () => void;
+  haveButton?: boolean;
 }

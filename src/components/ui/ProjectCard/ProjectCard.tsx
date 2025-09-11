@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button/Button";
 import { IProjectCardProps } from "@/components/ui/ProjectCard/ProjectCard.type";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +9,8 @@ const ProjectCard: FC<IProjectCardProps> = ({
   ProjectImage,
   ProjectDescription,
   ProjectTitle,
+  onClickButton,
+  haveButton,
 }) => {
   return (
     <Link
@@ -27,6 +30,14 @@ const ProjectCard: FC<IProjectCardProps> = ({
       <p className="text-1 font-light text-left tracking-tighter max-md:text-xs">
         {ProjectDescription}
       </p>
+      {haveButton && (
+        <Button
+          onClick={onClickButton}
+          classname="bg-Appearance-Slate-400 text-Appearance-Slate-900 w-full"
+        >
+          Read More
+        </Button>
+      )}
     </Link>
   );
 };

@@ -1,5 +1,8 @@
+"use client";
+
 import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
 import { IProjectCardProps } from "@/components/ui/ProjectCard/ProjectCard.type";
+import { useRouter } from "next/navigation";
 import { FC } from "react";
 
 export interface GridProjectGalleryProps {
@@ -7,6 +10,8 @@ export interface GridProjectGalleryProps {
 }
 
 const GridProjectGallery: FC<GridProjectGalleryProps> = ({ list }) => {
+  const router = useRouter();
+
   if (!list || list.length === 0) {
     return <div>No Projects Found</div>;
   }
@@ -20,6 +25,8 @@ const GridProjectGallery: FC<GridProjectGalleryProps> = ({ list }) => {
             ProjectImage={item.ProjectImage}
             ProjectLink={item.ProjectLink || "#"}
             ProjectTitle={item.ProjectTitle}
+            haveButton
+            onClickButton={() => router.push(item.ProjectTitle)}
           />
         </div>
       ))}
