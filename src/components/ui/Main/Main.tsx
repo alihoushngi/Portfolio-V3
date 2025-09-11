@@ -1,11 +1,11 @@
-import bgBlurs from "@/assets/Images/Main/background blurs.svg";
 import SnakeGameBoard from "@/components/ui/Main/components/SnakeGameBoard";
 import Image from "next/image";
 import Link from "next/link";
+import bgBlurs from "../../../../public/Images/Main/backgroundBlurs.svg";
 
 const Main = () => {
   return (
-    <div className="w-full h-full flex justify-between items-center max-md:relative md:max-w-[1200px] md:mx-auto">
+    <div className="w-full h-full flex justify-between items-center max-md:relative md:max-w-[1200px] md:mx-auto max-md:h-[80vh]">
       <div className="w-1/2 max-md:w-full max-md:px-6 h-full flex justify-center items-center flex-col gap-16 z-20">
         <div className="mx-auto max-md:w-full max-md:flex max-md:flex-col max-md:gap-2">
           <span className="text-3 text-Appearance-Slate-400 font-light">
