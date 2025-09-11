@@ -1,4 +1,4 @@
-import { ProjectsEn } from "@/app/projects/assets/ProjectList";
+import { ProjectsEn } from "@/assets/list/ProjectList";
 import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
 
 const ProjectGallery = () => {

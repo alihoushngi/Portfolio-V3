@@ -1,6 +1,6 @@
 "use client";
 
-import { ProjectsEn } from "@/app/projects/assets/ProjectList";
+import { ProjectsEn } from "@/assets/list/ProjectList";
 import GridProjectGallery from "@/components/ui/ProjectGallery/Views/GridProjectGallery";
 import ListProjectGallery from "@/components/ui/ProjectGallery/Views/ListProjectGallery";
 import { useProjectViewStore } from "@/store/projectView";

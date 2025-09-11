@@ -1,6 +1,6 @@
 "use client";
 
-import { FiltersItems } from "@/components/shared/Projects/FirstSideBar/FiltersList";
+import { FiltersItems } from "@/assets/list/FiltersList";
 import FilterSelection from "@/components/ui/FilterSelection/FilterSelection";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
