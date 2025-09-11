@@ -2,7 +2,7 @@
 
 import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
 import { IProjectCardProps } from "@/components/ui/ProjectCard/ProjectCard.type";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { FC } from "react";
 
 export interface ListProjectGalleryProps {
@@ -11,14 +11,17 @@ export interface ListProjectGalleryProps {
 
 const ListProjectGallery: FC<ListProjectGalleryProps> = ({ list }) => {
   const router = useRouter();
+  const query = useSearchParams().get("category");
 
-  if (!list || list.length === 0) {
-    return <div>No Projects Found</div>;
-  }
+  const selectedCategories = query ? query.split(",") : [];
 
+  const filteredList =
+    selectedCategories.length > 0
+      ? list.filter((item) => selectedCategories.includes(item.Category))
+      : list;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-      {list.map((item, index) => (
+    <div className="flex flex-col gap-4 w-full">
+      {filteredList.map((item, index) => (
         <ProjectCard
           key={index}
           ProjectDescription={item.ProjectDescription}
@@ -27,6 +30,7 @@ const ListProjectGallery: FC<ListProjectGalleryProps> = ({ list }) => {
           ProjectTitle={item.ProjectTitle}
           haveButton
           onClickButton={() => router.push(item.ProjectTitle)}
+          Category={item.Category}
         />
       ))}
     </div>

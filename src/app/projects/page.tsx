@@ -13,6 +13,7 @@ const ProjectsPage = () => {
     ProjectTitle: p.title,
     ProjectDescription: p.description,
     ProjectLink: p.link,
+    Category: p.Category,
   }));
 
   if (view === "grid") {

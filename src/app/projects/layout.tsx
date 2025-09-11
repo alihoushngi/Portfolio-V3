@@ -1,4 +1,4 @@
-import FirstSideBar from "@/components/shared/Projects/FirstSideBar/FirstSideBar";
+import FirstSideBar from "@/components/shared/Projects/FirstSideBar/Filters";
 import SecondarySideBar from "@/components/shared/Projects/SecondarySideBar/SecondarySideBar";
 
 import React from "react";

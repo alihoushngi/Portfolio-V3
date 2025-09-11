@@ -7,4 +7,5 @@ export interface IProjectCardProps {
   ProjectTitle: string;
   onClickButton?: () => void;
   haveButton?: boolean;
+  Category: string;
 }

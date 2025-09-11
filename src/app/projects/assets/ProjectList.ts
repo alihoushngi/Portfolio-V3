@@ -95,6 +95,7 @@ export const ProjectsEn = [
     description:
       "An online pharmacy website with the ability to purchase medicines and get medical consultations.",
     link: "/projects/digimoragheb",
+    Category: "nextjs",
   },
   {
     img: "/Images/Projects/DrmsabetWeb.jpg",
@@ -102,6 +103,7 @@ export const ProjectsEn = [
     description:
       "A medical and beauty website introducing Dr. Sabet’s clinic and services.",
     link: "/projects/drmsabet",
+    Category: "wordpress",
   },
   {
     img: "/Images/Projects/FOLWeb.jpg",
@@ -109,6 +111,7 @@ export const ProjectsEn = [
     description:
       "A modern and creative website for a digital marketing agency.",
     link: "/projects/fol",
+    Category: "wordpress",
   },
   {
     img: "/Images/Projects/HirkanWeb.jpg",
@@ -116,12 +119,14 @@ export const ProjectsEn = [
     description:
       "An online store for beds, sofas, and wooden furniture with a user-friendly design.",
     link: "/projects/hirkan",
+    Category: "wordpress",
   },
   {
     img: "/Images/Projects/LoopGameWeb.jpg",
     title: "Loop Game",
     description: "An online shop for PS4, PS5, Xbox, and PC game accounts.",
     link: "/projects/loopgame",
+    Category: "nextjs",
   },
   {
     img: "/Images/Projects/NextBaseWeb.jpg",
@@ -129,18 +134,21 @@ export const ProjectsEn = [
     description:
       "A ready-to-use Next.js starter project with a custom CLI and features like Redux and i18n.",
     link: "/projects/nextbase",
+    Category: "nextjs",
   },
   {
     img: "/Images/Projects/PezeshkanWeb.jpg",
     title: "Pezeshkan Website",
     description: "A WordPress-based medical website for introducing doctors.",
     link: "/projects/pezeshkan",
+    Category: "wordpress",
   },
   {
     img: "/Images/Projects/PointWeb.jpg",
     title: "Point Agency",
     description: "A digital agency website focused on online services.",
     link: "/projects/point",
+    Category: "nextjs",
   },
   {
     img: "/Images/Projects/PortfolioProjectPageWeb.jpg",
@@ -148,6 +156,7 @@ export const ProjectsEn = [
     description:
       "My previous personal portfolio website for showcasing projects.",
     link: "/projects/portfolio",
+    Category: "nextjs",
   },
   {
     img: "/Images/Projects/RahabussinesWeb.jpg",
@@ -155,6 +164,7 @@ export const ProjectsEn = [
     description:
       "A corporate website presenting the services and activities of Rahabussines.",
     link: "/projects/rahabussines",
+    Category: "react",
   },
   {
     img: "/Images/Projects/ShindadnHotelWeb.jpg",
@@ -162,6 +172,7 @@ export const ProjectsEn = [
     description:
       "A hotel website in Astara with online room booking functionality.",
     link: "/projects/shindadnhotel",
+    Category: "wordpress",
   },
   {
     img: "/Images/Projects/SpadPostWeb.jpg",
@@ -169,6 +180,7 @@ export const ProjectsEn = [
     description:
       "An ecommerce platform integrated with the Post Office, with vendor panels and multi-store management.",
     link: "/projects/spadpost",
+    Category: "nextjs",
   },
   {
     img: "/Images/Projects/TocanFamApadanaWeb.jpg",
@@ -176,11 +188,13 @@ export const ProjectsEn = [
     description:
       "A factory website for producing and selling pharmaceutical materials.",
     link: "/projects/tocanfamapadana",
+    Category: "wordpress",
   },
   {
     img: "/Images/Projects/YazdanPanahWeb.jpg",
     title: "Yazdan Panah Auto Parts",
     description: "An online store for car parts with a custom design.",
     link: "/projects/yazdanpanah",
+    Category: "wordpress",
   },
 ];
