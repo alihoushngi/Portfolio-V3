@@ -164,16 +164,16 @@ const SnakeGameBoard = () => {
   };
 
   return (
-    <div className="flex justify-start items-start h-full gap-4 w-[500px] rounded-lg border border-Appearance-Slate-700 p-7 bg-glass-gradient bg-opacity-70 shadow-inner-white backdrop-blur-60 z-20 relative">
+    <div className="flex flex-col md:flex-row justify-start items-start h-full gap-4 w-full max-w-[500px] rounded-lg border border-Appearance-Slate-700 p-4 md:p-7 bg-glass-gradient bg-opacity-70 shadow-inner-white backdrop-blur-60 z-20 relative">
       {/* corners */}
-      <IoIosClose className="bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute top-3 left-3" />
-      <IoIosClose className="bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute top-3 right-3" />
-      <IoIosClose className="bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute bottom-3 left-3" />
-      <IoIosClose className="bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute bottom-3 right-3" />
+      <IoIosClose className="hidden md:block bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute top-3 left-3" />
+      <IoIosClose className="hidden md:block bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute top-3 right-3" />
+      <IoIosClose className="hidden md:block bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute bottom-3 left-3" />
+      <IoIosClose className="hidden md:block bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute bottom-3 right-3" />
 
       {/* Snake Game Board */}
       <div
-        className="h-full bg-Appearance-Slate-800 rounded-lg w-[250px] relative overflow-hidden"
+        className="bg-Appearance-Slate-800 rounded-lg relative overflow-hidden w-full h-[300px] md:w-[250px] md:h-full"
         ref={gameBoardRef}
       >
         {/* food */}
@@ -208,47 +208,52 @@ const SnakeGameBoard = () => {
           </div>
         ))}
         {isStart !== "true" && (
-          <div className="w-full bottom-6 absolute left-4">
+          <div className="w-full bottom-6 absolute left-0 flex justify-center">
             <button
               onClick={() => setIsStart("true")}
-              className="bg-Primary-Orange-300_Main text-[10px] rounded-lg px-3 py-1 text-black max-md:hidden"
+              className="bg-Primary-Orange-300_Main text-xs rounded-lg px-3 py-1 text-black"
             >
-              Press <strong>Enter</strong> To Start Then Move
+              {`Tap to Start`}
             </button>
           </div>
         )}
       </div>
 
-      {/* Snake Game hint */}
-      <div className="h-full w-1/2">
-        <div className="bg-Appearance-Slate-800 rounded-lg p-3 flex flex-col justify-start items-start ">
-          <div className="flex flex-col justify-start items-start gap-1 flex-wrap text-1 text-Appearance-Slate-50 font-light">
+      {/* Snake Game Controls & Info */}
+      <div className="h-auto md:h-full w-full md:w-1/2 mt-4 md:mt-0">
+        <div className="bg-Appearance-Slate-800 rounded-lg p-3 flex flex-col justify-start items-center gap-3">
+          {/* keyboard hint only for desktop */}
+          <div className="hidden md:flex flex-col justify-start items-start gap-1 flex-wrap text-1 text-Appearance-Slate-50 font-light w-full">
             <span>{"//"} use keyboard</span>
             <span>{"//"} arrows to play</span>
           </div>
-          <div className="mt-4 w-full flex flex-col justify-center items-center gap-3">
-            <div className="flex w-full justify-center items-center">
+
+          {/* Mobile Controls */}
+          <div className="w-full flex flex-col justify-center items-center gap-3">
+            <div>
               <IoMdArrowDropup
                 onClick={() => handleMove("UP")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-5 text-white w-9"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
               />
             </div>
-            <div className="flex w-full justify-center items-center gap-3">
+            <div className="flex justify-center items-center gap-3">
               <IoMdArrowDropleft
                 onClick={() => handleMove("LEFT")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-5 text-white w-9"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
               />
               <IoMdArrowDropdown
                 onClick={() => handleMove("DOWN")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-5 text-white w-9"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
               />
               <IoMdArrowDropright
                 onClick={() => handleMove("RIGHT")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-5 text-white w-9"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
               />
             </div>
           </div>
         </div>
+
+        {/* Food Left */}
         <div className="flex flex-col justify-start items-start gap-1 w-full flex-wrap text-1 text-Appearance-Slate-50 font-light mt-6 p-3">
           <span>{"//"} food left</span>
           <div className="flex gap-3 w-full flex-wrap mt-5">

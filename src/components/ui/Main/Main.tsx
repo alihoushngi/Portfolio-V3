@@ -5,7 +5,7 @@ import bgBlurs from "../../../../public/Images/Main/backgroundBlurs.svg";
 
 const Main = () => {
   return (
-    <div className="w-full h-full flex justify-between items-center max-md:relative md:max-w-[1200px] md:mx-auto max-md:h-[80vh]">
+    <div className="w-full h-full flex max-md:flex-col max-md:p-3 justify-between items-center max-md:relative md:max-w-[1200px] md:mx-auto ">
       <div className="w-1/2 max-md:w-full max-md:px-6 h-full flex justify-center items-center flex-col gap-16 z-20">
         <div className="mx-auto max-md:w-full max-md:flex max-md:flex-col max-md:gap-2">
           <span className="text-3 text-Appearance-Slate-400 font-light">
@@ -45,12 +45,16 @@ const Main = () => {
         alt="background blurs"
         className="absolute top-0 w-full h-full md:hidden max-md:object-cover max-md:blur-3xl z-10"
       />
-      <div className="w-1/2 h-3/4 relative max-md:hidden flex justify-center items-center">
+      <div className="w-1/2 h-3/4 relative hidden md:flex justify-center items-center">
         <Image
           src={bgBlurs}
           alt="background blurs"
           className="absolute top-0 blur-3xl w-full object-cover h-full z-10"
         />
+        <SnakeGameBoard />
+      </div>
+
+      <div className="w-full md:hidden flex justify-center items-center mt-6">
         <SnakeGameBoard />
       </div>
     </div>
