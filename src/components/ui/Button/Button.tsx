@@ -1,0 +1,32 @@
+import Link from "next/link";
+import { FC } from "react";
+
+export interface IButtonProps {
+  onClick?: () => void;
+  children?: React.ReactNode;
+  isLink?: boolean;
+  LinkUrl?: string;
+}
+
+const Button: FC<IButtonProps> = ({ children, onClick, isLink, LinkUrl }) => {
+  if (isLink) {
+    return (
+      <Link
+        className="text-xs px-3 py-1 max-md:w-full max-md:px-1 rounded-md bg-Appearance-Slate-700 text-gray-200 hover:opacity-80 transition max-md:text-center"
+        href={LinkUrl || "#"}
+      >
+        {children}
+      </Link>
+    );
+  } else
+    return (
+      <button
+        className="text-xs px-3 py-1 max-md:w-full max-md:px-1 rounded-md bg-Appearance-Slate-700 text-gray-200 hover:opacity-80 transition"
+        onClick={onClick}
+      >
+        {children}
+      </button>
+    );
+};
+
+export default Button;
