@@ -33,7 +33,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
       {haveButton && (
         <Button
           onClick={onClickButton}
-          classname="bg-Appearance-Slate-400 text-Appearance-Slate-900 w-full hover:bg-Appearance-Slate-200"
+          classname="bg-Appearance-Slate-500 text-Appearance-Slate-900 w-full hover:bg-Appearance-Slate-200 hover:text-Appearance-Slate-950"
         >
           Read More
         </Button>
