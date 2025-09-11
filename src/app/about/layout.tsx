@@ -1,6 +1,6 @@
 import FirstSideBar from "@/components/shared/About/FirstSideBar/FirstSideBar";
-import OpenedFileBar from "@/components/shared/About/OpenedFileBar/OpenedFileBar";
 import SecondarySideBar from "@/components/shared/About/SecondarySideBar/SecondarySideBar";
+import OpenedFileBar from "@/components/ui/OpenedFileBar/OpenedFileBar";
 import React from "react";
 
 const AboutLayout = ({ children }: { children: React.ReactNode }) => {

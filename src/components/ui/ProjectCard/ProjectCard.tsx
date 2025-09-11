@@ -19,8 +19,8 @@ const ProjectCard: FC<IProjectCardProps> = ({
         alt={ProjectDescription}
         aria-label={ProjectDescription}
         priority
-        width={1080}
-        height={1080}
+        width={2000}
+        height={2000}
         className="w-full h-auto rounded-lg"
       />
       <h3 className="text-3 font-extrabold max-md:text-1">{ProjectTitle}</h3>
