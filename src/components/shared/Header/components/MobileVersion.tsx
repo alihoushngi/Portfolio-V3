@@ -1,8 +1,5 @@
 import { IHeaderProps } from "@/components/shared/Header/assets/header.type";
-import {
-  firstMenuItems,
-  secondMenuItems,
-} from "@/components/shared/Header/assets/items";
+import { firstMenuItems } from "@/components/shared/Header/assets/items";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
@@ -51,7 +48,7 @@ const MobileVersion = ({ pathname }: IHeaderProps) => {
                   );
                 }
               })}
-              {secondMenuItems.map((item, index) => {
+              {/* {secondMenuItems.map((item, index) => {
                 if (!item.disable) {
                   return (
                     <Link
@@ -64,7 +61,7 @@ const MobileVersion = ({ pathname }: IHeaderProps) => {
                     </Link>
                   );
                 }
-              })}
+              })} */}
             </div>
           </motion.div>
         )}

@@ -6,6 +6,6 @@ export const firstMenuItems = [
   { title: "_videos", url: "/videos", disable: true },
 ];
 
-export const secondMenuItems = [
-  { title: "_contact-me", url: "/contact", disable: false },
-];
+// export const secondMenuItems = [
+//   { title: "_contact-me", url: "/contact", disable: false },
+// ];

@@ -1,8 +1,5 @@
 import { IHeaderProps } from "@/components/shared/Header/assets/header.type";
-import {
-  firstMenuItems,
-  secondMenuItems,
-} from "@/components/shared/Header/assets/items";
+import { firstMenuItems } from "@/components/shared/Header/assets/items";
 import Link from "next/link";
 
 const DesktopVersion = ({ pathname }: IHeaderProps) => {
@@ -26,7 +23,7 @@ const DesktopVersion = ({ pathname }: IHeaderProps) => {
           })}
         </div>
       </div>
-      <div className="flex justify-center items-center w-fit text-nowrap">
+      {/* <div className="flex justify-center items-center w-fit text-nowrap">
         {secondMenuItems.map((item, index) => {
           if (!item.disable) {
             return (
@@ -40,7 +37,7 @@ const DesktopVersion = ({ pathname }: IHeaderProps) => {
             );
           }
         })}
-      </div>
+      </div> */}
     </div>
   );
 };
