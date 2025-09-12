@@ -4,11 +4,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Professional Expertise - Ali Hooshangi | Frontend Developer & Web Designer",
+    "Professional Expertise - Ali Hooshangi | Frontend Developer & Web Designer | تجربه حرفه‌ای علی هوشنگی",
   description:
-    "Explore the professional expertise of Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in Next.js, React.js, Tailwind CSS, WordPress, and SEO-optimized web development.",
+    "Explore the professional expertise of Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in Next.js, React.js, Tailwind CSS, WordPress, and SEO-optimized web development. | تجربه حرفه‌ای علی هوشنگی شامل توسعه فرانت‌اند با Next.js، React.js، Tailwind CSS، طراحی وب‌سایت با WordPress و توسعه بهینه برای SEO است.",
   keywords: [
     "Ali Hooshangi",
+    "علی هوشنگی",
     "Frontend Developer",
     "React.js",
     "Next.js",
@@ -20,35 +21,62 @@ export const metadata: Metadata = {
     "TypeScript",
     "Performance Optimization",
     "Accessibility",
+    "Web Development",
+    "طراحی وب",
+    "توسعه وب",
+    "تجربه حرفه‌ای",
   ],
-  authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  authors: [
+    { name: "Ali Hooshangi", url: "https://portfolio-v2-orcin-phi.vercel.app" },
+  ],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#1a1a1a",
   openGraph: {
     title:
       "Professional Expertise - Ali Hooshangi | Frontend Developer & Web Designer",
     description:
-      "Explore the professional expertise of Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in Next.js, React.js, Tailwind CSS, WordPress, and SEO-optimized web development.",
-    url: "https://yourwebsite.com/professional-info",
+      "Explore the professional expertise of Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in Next.js, React.js, Tailwind CSS, WordPress, and SEO-optimized web development. | تجربه حرفه‌ای علی هوشنگی شامل توسعه فرانت‌اند با Next.js، React.js، Tailwind CSS، طراحی وب‌سایت با WordPress و توسعه بهینه برای SEO است.",
+    url: "https://portfolio-v2-orcin-phi.vercel.app/professional-info",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/professional-info-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/professional-info-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - Professional Expertise",
+        alt: "Ali Hooshangi - Professional Expertise | تجربه حرفه‌ای",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title:
       "Professional Expertise - Ali Hooshangi | Frontend Developer & Web Designer",
     description:
-      "Explore the professional expertise of Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in Next.js, React.js, Tailwind CSS, WordPress, and SEO-optimized web development.",
-    images: ["https://yourwebsite.com/images/professional-info-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Explore the professional expertise of Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in Next.js, React.js, Tailwind CSS, WordPress, and SEO-optimized web development. | تجربه حرفه‌ای علی هوشنگی شامل توسعه فرانت‌اند با Next.js، React.js، Tailwind CSS، طراحی وب‌سایت با WordPress و توسعه بهینه برای SEO است.",
+    images: [
+      "https://portfolio-v2-orcin-phi.vercel.app/images/professional-info-og.jpg",
+    ],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

@@ -2,11 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "JavaScript Journey - Ali Hooshangi | Learning HTML, CSS & JS",
+  title:
+    "JavaScript Journey - Ali Hooshangi | Learning HTML, CSS & JS | مسیر یادگیری JavaScript",
   description:
-    "Explore Ali Hooshangi's journey in learning JavaScript, HTML, CSS, Tailwind, and Bootstrap starting in 1400, including online resources like CSS-Tricks, MegaJS, YouTube tutorials, and Udemy courses, with practical exercises and projects.",
+    "Explore Ali Hooshangi's journey in learning JavaScript, HTML, CSS, Tailwind, and Bootstrap starting in 1400, including online resources like CSS-Tricks, MegaJS, YouTube tutorials, and Udemy courses, with practical exercises and projects. | مسیر یادگیری علی هوشنگی در JavaScript، HTML، CSS، Tailwind و Bootstrap از سال 1400 با استفاده از منابع آنلاین مثل CSS-Tricks، MegaJS، ویدیوهای یوتیوب و دوره‌های Udemy همراه با تمرین‌ها و پروژه‌های عملی.",
   keywords: [
     "Ali Hooshangi",
+    "علی هوشنگی",
     "JavaScript",
     "HTML",
     "CSS",
@@ -20,33 +22,37 @@ export const metadata: Metadata = {
     "YouTube Tutorials",
     "Udemy",
     "Zero to Mastery",
+    "مسیر یادگیری",
+    "توسعه وب",
   ],
   authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   openGraph: {
     title: "JavaScript Journey - Ali Hooshangi | Learning HTML, CSS & JS",
     description:
-      "Explore Ali Hooshangi's journey in learning JavaScript, HTML, CSS, Tailwind, and Bootstrap starting in 1400, including online resources like CSS-Tricks, MegaJS, YouTube tutorials, and Udemy courses, with practical exercises and projects.",
+      "Explore Ali Hooshangi's journey in learning JavaScript, HTML, CSS, Tailwind, and Bootstrap starting in 1400, including online resources like CSS-Tricks, MegaJS, YouTube tutorials, and Udemy courses, with practical exercises and projects. | مسیر یادگیری علی هوشنگی در JavaScript، HTML، CSS، Tailwind و Bootstrap از سال 1400 با استفاده از منابع آنلاین مثل CSS-Tricks، MegaJS، ویدیوهای یوتیوب و دوره‌های Udemy همراه با تمرین‌ها و پروژه‌های عملی.",
     url: "https://yourwebsite.com/js",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
         url: "https://yourwebsite.com/images/js-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - JavaScript Learning Journey",
+        alt: "Ali Hooshangi - JavaScript Learning Journey | مسیر یادگیری JS",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "JavaScript Journey - Ali Hooshangi | Learning HTML, CSS & JS",
     description:
-      "Explore Ali Hooshangi's journey in learning JavaScript, HTML, CSS, Tailwind, and Bootstrap starting in 1400, including online resources like CSS-Tricks, MegaJS, YouTube tutorials, and Udemy courses, with practical exercises and projects.",
+      "Explore Ali Hooshangi's journey in learning JavaScript, HTML, CSS, Tailwind, and Bootstrap starting in 1400, including online resources like CSS-Tricks, MegaJS, YouTube tutorials, and Udemy courses, with practical exercises and projects. | مسیر یادگیری علی هوشنگی در JavaScript، HTML، CSS، Tailwind و Bootstrap از سال 1400 با استفاده از منابع آنلاین مثل CSS-Tricks، MegaJS، ویدیوهای یوتیوب و دوره‌های Udemy همراه با تمرین‌ها و پروژه‌های عملی.",
     images: ["https://yourwebsite.com/images/js-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
   },
 };
 

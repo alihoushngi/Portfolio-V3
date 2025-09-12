@@ -2,51 +2,84 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Education - Ali Hooshangi | Academic Background & Achievements",
+  title:
+    "Education - Ali Hooshangi | Academic Background & Achievements | تحصیلات علی هوشنگی",
   description:
-    "Explore the comprehensive educational journey of Ali Hooshangi, from primary and secondary school in Tehran and Rasht, to earning a diploma and bachelor's degree in Computer Engineering. Learn how his academic experiences shaped his technical expertise in software, hardware, web development, and modern technologies.",
+    "Explore the comprehensive educational journey of Ali Hooshangi, from primary and secondary school in Tehran and Rasht, to earning a diploma and bachelor's degree in Computer Engineering. Discover how his academic experiences shaped his expertise in software, hardware, web development, Next.js, React.js, WordPress, SEO, and modern technologies. | مسیر تحصیلی کامل علی هوشنگی، از مدارس ابتدایی و راهنمایی در تهران و رشت تا اخذ دیپلم و مدرک کارشناسی مهندسی کامپیوتر. ببینید چگونه تجربیات تحصیلی او تخصصش را در نرم‌افزار، سخت‌افزار، توسعه وب، Next.js، React.js، WordPress، سئو و فناوری‌های مدرن شکل داد.",
+  authors: [
+    { name: "Ali Hooshangi", url: "https://portfolio-v2-orcin-phi.vercel.app" },
+  ],
   keywords: [
     "Ali Hooshangi",
+    "Ali Houshangi",
+    "علی هوشنگی",
     "Education",
+    "تحصیلات",
     "Academic Journey",
+    "مسیر تحصیلی",
     "Computer Engineering",
+    "مهندسی کامپیوتر",
     "Software Engineering",
     "Chamran University",
     "Ibn Hesam University",
     "Rasht",
+    "Tehran",
     "Birjand",
     "Frontend Development",
     "Next.js",
     "React.js",
     "WordPress",
-    "Technology Skills",
+    "SEO",
+    "Modern Technologies",
+    "Tailwind CSS",
+    "Portfolio",
   ],
-  authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#1a1a1a",
   openGraph: {
     title: "Education - Ali Hooshangi | Academic Background & Achievements",
     description:
-      "Explore the comprehensive educational journey of Ali Hooshangi, from primary and secondary school in Tehran and Rasht, to earning a diploma and bachelor's degree in Computer Engineering. Learn how his academic experiences shaped his technical expertise in software, hardware, web development, and modern technologies.",
-    url: "https://yourwebsite.com/education",
+      "Explore the comprehensive educational journey of Ali Hooshangi, from primary and secondary school in Tehran and Rasht, to earning a diploma and bachelor's degree in Computer Engineering. Discover how his academic experiences shaped his expertise in software, hardware, web development, Next.js, React.js, WordPress, SEO, and modern technologies. | مسیر تحصیلی کامل علی هوشنگی، از مدارس ابتدایی و راهنمایی در تهران و رشت تا اخذ دیپلم و مدرک کارشناسی مهندسی کامپیوتر. ببینید چگونه تجربیات تحصیلی او تخصصش را در نرم‌افزار، سخت‌افزار، توسعه وب، Next.js، React.js، WordPress، سئو و فناوری‌های مدرن شکل داد.",
+    url: "https://portfolio-v2-orcin-phi.vercel.app/education",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/education-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/education-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - Education Background",
+        alt: "Ali Hooshangi - Education Background | تحصیلات علی هوشنگی",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Education - Ali Hooshangi | Academic Background & Achievements",
     description:
-      "Explore the comprehensive educational journey of Ali Hooshangi, from primary and secondary school in Tehran and Rasht, to earning a diploma and bachelor's degree in Computer Engineering. Learn how his academic experiences shaped his technical expertise in software, hardware, web development, and modern technologies.",
-    images: ["https://yourwebsite.com/images/education-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Explore the comprehensive educational journey of Ali Hooshangi, from primary and secondary school in Tehran and Rasht, to earning a diploma and bachelor's degree in Computer Engineering. Discover how his academic experiences shaped his expertise in software, hardware, web development, Next.js, React.js, WordPress, SEO, and modern technologies. | مسیر تحصیلی کامل علی هوشنگی، از مدارس ابتدایی و راهنمایی در تهران و رشت تا اخذ دیپلم و مدرک کارشناسی مهندسی کامپیوتر. ببینید چگونه تجربیات تحصیلی او تخصصش را در نرم‌افزار، سخت‌افزار، توسعه وب، Next.js، React.js، WordPress، سئو و فناوری‌های مدرن شکل داد.",
+    images: [
+      "https://portfolio-v2-orcin-phi.vercel.app/images/education-og.jpg",
+    ],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

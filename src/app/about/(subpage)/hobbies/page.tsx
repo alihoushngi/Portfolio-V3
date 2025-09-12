@@ -1,53 +1,82 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hobbies & Interests - Ali Hooshangi | Personal Passions & Activities",
+  title:
+    "Hobbies & Interests - Ali Hooshangi | Personal Passions & Activities | علایق و سرگرمی‌ها علی هوشنگی",
   description:
-    "Discover the hobbies and personal interests of Ali Hooshangi, including football, technology, computer games, travel, home automation, and creative projects combining hardware and software.",
+    "Discover the hobbies and personal interests of Ali Hooshangi, including football, technology, computer games, travel, home automation, creative projects combining hardware and software, reading, history, and mentoring. | علایق و سرگرمی‌های علی هوشنگی شامل فوتبال، فناوری، بازی‌های کامپیوتری، سفر، خانه هوشمند، پروژه‌های خلاقانه ترکیبی از سخت‌افزار و نرم‌افزار، مطالعه، تاریخ و آموزش است.",
+  authors: [
+    { name: "Ali Hooshangi", url: "https://portfolio-v2-orcin-phi.vercel.app" },
+  ],
   keywords: [
     "Ali Hooshangi",
+    "Ali Houshangi",
+    "علی هوشنگی",
     "Hobbies",
     "Interests",
+    "علایق",
+    "سرگرمی‌ها",
     "Football",
+    "Soccer",
     "Technology",
     "Travel",
     "Computer Games",
     "Home Automation",
     "Creative Projects",
     "DIY",
+    "Mentoring",
+    "Education",
     "Web Development",
     "Next.js",
     "React.js",
     "WordPress",
   ],
-  authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#1a1a1a",
   openGraph: {
     title:
       "Hobbies & Interests - Ali Hooshangi | Personal Passions & Activities",
     description:
-      "Discover the hobbies and personal interests of Ali Hooshangi, including football, technology, computer games, travel, home automation, and creative projects combining hardware and software.",
-    url: "https://yourwebsite.com/hobbies",
+      "Discover the hobbies and personal interests of Ali Hooshangi, including football, technology, computer games, travel, home automation, creative projects combining hardware and software, reading, history, and mentoring. | علایق و سرگرمی‌های علی هوشنگی شامل فوتبال، فناوری، بازی‌های کامپیوتری، سفر، خانه هوشمند، پروژه‌های خلاقانه ترکیبی از سخت‌افزار و نرم‌افزار، مطالعه، تاریخ و آموزش است.",
+    url: "https://portfolio-v2-orcin-phi.vercel.app/hobbies",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/hobbies-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/hobbies-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - Hobbies and Interests",
+        alt: "Ali Hooshangi - Hobbies & Interests | علایق و سرگرمی‌ها",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title:
       "Hobbies & Interests - Ali Hooshangi | Personal Passions & Activities",
     description:
-      "Discover the hobbies and personal interests of Ali Hooshangi, including football, technology, computer games, travel, home automation, and creative projects combining hardware and software.",
-    images: ["https://yourwebsite.com/images/hobbies-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Discover the hobbies and personal interests of Ali Hooshangi, including football, technology, computer games, travel, home automation, creative projects combining hardware and software, reading, history, and mentoring. | علایق و سرگرمی‌های علی هوشنگی شامل فوتبال، فناوری، بازی‌های کامپیوتری، سفر، خانه هوشمند، پروژه‌های خلاقانه ترکیبی از سخت‌افزار و نرم‌افزار، مطالعه، تاریخ و آموزش است.",
+    images: ["https://portfolio-v2-orcin-phi.vercel.app/images/hobbies-og.jpg"],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

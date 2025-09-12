@@ -2,11 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Next.js Journey - Ali Hooshangi | Advanced Frontend Development",
+  title:
+    "Next.js Journey - Ali Hooshangi | Advanced Frontend Development | مسیر یادگیری Next.js",
   description:
-    "Follow Ali Hooshangi's journey mastering Next.js from version 10 to the latest, including projects at Hira.dev, OnlineSalamat, Dayereh Salamat, SpadPost, Rahabusiness, and his personal portfolio, creating a custom Next.js CLI, and extensive experience with Redux, Tailwind, TypeScript, and state management.",
+    "Follow Ali Hooshangi's journey mastering Next.js from version 10 to the latest, including projects at Hira.dev, OnlineSalamat, Dayereh Salamat, SpadPost, Rahabusiness, and his personal portfolio, creating a custom Next.js CLI, and experience with Redux, Tailwind, TypeScript, and state management. | مسیر یادگیری علی هوشنگی در Next.js از نسخه 10 تا آخرین نسخه، شامل پروژه‌های Hira.dev، OnlineSalamat، Dayereh Salamat، SpadPost، Rahabusiness و پرتفوی شخصی، ایجاد CLI سفارشی و تجربه گسترده با Redux، Tailwind، TypeScript و مدیریت State.",
   keywords: [
     "Ali Hooshangi",
+    "علی هوشنگی",
     "Next.js",
     "Next.js CLI",
     "React",
@@ -20,12 +22,9 @@ export const metadata: Metadata = {
     "React Icons",
     "Frontend Development",
     "Web Development",
-    "Hira.dev",
-    "OnlineSalamat",
-    "Dayereh Salamat",
-    "SpadPost",
-    "Rahabusiness",
     "Portfolio",
+    "مسیر یادگیری",
+    "توسعه وب",
   ],
   authors: [
     {
@@ -33,31 +32,33 @@ export const metadata: Metadata = {
       url: "https://portfolio-v2-orcin-phi.vercel.app/",
     },
   ],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   openGraph: {
     title: "Next.js Journey - Ali Hooshangi | Advanced Frontend Development",
     description:
-      "Follow Ali Hooshangi's journey mastering Next.js from version 10 to the latest, including projects at Hira.dev, OnlineSalamat, Dayereh Salamat, SpadPost, Rahabusiness, and his personal portfolio, creating a custom Next.js CLI, and extensive experience with Redux, Tailwind, TypeScript, and state management.",
+      "Follow Ali Hooshangi's journey mastering Next.js from version 10 to the latest, including projects at Hira.dev, OnlineSalamat, Dayereh Salamat, SpadPost, Rahabusiness, and his personal portfolio, creating a custom Next.js CLI, and experience with Redux, Tailwind, TypeScript, and state management. | مسیر یادگیری علی هوشنگی در Next.js از نسخه 10 تا آخرین نسخه، شامل پروژه‌های Hira.dev، OnlineSalamat، Dayereh Salamat، SpadPost، Rahabusiness و پرتفوی شخصی، ایجاد CLI سفارشی و تجربه گسترده با Redux، Tailwind، TypeScript و مدیریت State.",
     url: "https://portfolio-v2-orcin-phi.vercel.app/nextjs",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/nextjs-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/nextjs-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - Next.js Journey",
+        alt: "Ali Hooshangi - Next.js Journey | مسیر یادگیری Next.js",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Next.js Journey - Ali Hooshangi | Advanced Frontend Development",
     description:
-      "Follow Ali Hooshangi's journey mastering Next.js from version 10 to the latest, including projects at Hira.dev, OnlineSalamat, Dayereh Salamat, SpadPost, Rahabusiness, and his personal portfolio, creating a custom Next.js CLI, and extensive experience with Redux, Tailwind, TypeScript, and state management.",
-    images: ["https://yourwebsite.com/images/nextjs-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Follow Ali Hooshangi's journey mastering Next.js from version 10 to the latest, including projects at Hira.dev, OnlineSalamat, Dayereh Salamat, SpadPost, Rahabusiness, and his personal portfolio, creating a custom Next.js CLI, and experience with Redux, Tailwind, TypeScript, and state management. | مسیر یادگیری علی هوشنگی در Next.js از نسخه 10 تا آخرین نسخه، شامل پروژه‌های Hira.dev، OnlineSalamat، Dayereh Salamat، SpadPost، Rahabusiness و پرتفوی شخصی، ایجاد CLI سفارشی و تجربه گسترده با Redux، Tailwind، TypeScript و مدیریت State.",
+    images: ["https://portfolio-v2-orcin-phi.vercel.app/images/nextjs-og.jpg"],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
   },
 };
 

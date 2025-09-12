@@ -2,11 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "React Journey - Ali Hooshangi | Learning React & TypeScript",
+  title:
+    "React Journey - Ali Hooshangi | Learning React & TypeScript | مسیر یادگیری React و TypeScript",
   description:
-    "Discover Ali Hooshangi's journey in learning React.js and TypeScript through online courses on Roocket, Udemy, and YouTube, and building his first professional project: the Pikaap dashboard for transportation in Mazandaran.",
+    "Discover Ali Hooshangi's journey in learning React.js and TypeScript through online courses on Roocket, Udemy, and YouTube, and building his first professional project: the Pikaap dashboard for transportation in Mazandaran. | مسیر یادگیری علی هوشنگی در React و TypeScript شامل دوره‌های آنلاین Roocket، Udemy و YouTube و ساخت اولین پروژه حرفه‌ای داشبورد پیکاپ در مازندران است.",
   keywords: [
     "Ali Hooshangi",
+    "علی هوشنگی",
     "React.js",
     "TypeScript",
     "Frontend Development",
@@ -19,33 +21,39 @@ export const metadata: Metadata = {
     "Mazandaran",
     "Web Development",
     "Pezhvak Dadeh Khazar",
+    "توسعه وب",
+    "مسیر یادگیری",
   ],
-  authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  authors: [
+    { name: "Ali Hooshangi", url: "https://portfolio-v2-orcin-phi.vercel.app" },
+  ],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   openGraph: {
     title: "React Journey - Ali Hooshangi | Learning React & TypeScript",
     description:
-      "Discover Ali Hooshangi's journey in learning React.js and TypeScript through online courses on Roocket, Udemy, and YouTube, and building his first professional project: the Pikaap dashboard for transportation in Mazandaran.",
-    url: "https://yourwebsite.com/react",
+      "Discover Ali Hooshangi's journey in learning React.js and TypeScript through online courses on Roocket, Udemy, and YouTube, and building his first professional project: the Pikaap dashboard for transportation in Mazandaran. | مسیر یادگیری علی هوشنگی در React و TypeScript شامل دوره‌های آنلاین Roocket، Udemy و YouTube و ساخت اولین پروژه حرفه‌ای داشبورد پیکاپ در مازندران است.",
+    url: "https://portfolio-v2-orcin-phi.vercel.app/react",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/react-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/react-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - React Learning Journey",
+        alt: "Ali Hooshangi - React Learning Journey | مسیر یادگیری React",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "React Journey - Ali Hooshangi | Learning React & TypeScript",
     description:
-      "Discover Ali Hooshangi's journey in learning React.js and TypeScript through online courses on Roocket, Udemy, and YouTube, and building his first professional project: the Pikaap dashboard for transportation in Mazandaran.",
-    images: ["https://yourwebsite.com/images/react-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Discover Ali Hooshangi's journey in learning React.js and TypeScript through online courses on Roocket, Udemy, and YouTube, and building his first professional project: the Pikaap dashboard for transportation in Mazandaran. | مسیر یادگیری علی هوشنگی در React و TypeScript شامل دوره‌های آنلاین Roocket، Udemy و YouTube و ساخت اولین پروژه حرفه‌ای داشبورد پیکاپ در مازندران است.",
+    images: ["https://portfolio-v2-orcin-phi.vercel.app/images/react-og.jpg"],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
   },
 };
 

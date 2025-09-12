@@ -4,51 +4,81 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ali Hooshangi Biography | Frontend Developer & Web Designer",
+  title:
+    "Ali Hooshangi Biography | Frontend Developer & Web Designer | بیوگرافی علی هوشنگی",
   description:
-    "Read the full biography of Ali Hooshangi, a frontend developer and web designer from Rasht, Iran. Learn about his journey from childhood curiosity to professional expertise in web development, Next.js, React.js, WordPress, and more.",
+    "Read the full biography of Ali Hooshangi, a frontend developer and web designer from Rasht, Iran. Explore his journey from childhood curiosity to professional expertise in web development, Next.js, React.js, WordPress, SEO, and Tailwind CSS. | بیوگرافی کامل علی هوشنگی، توسعه‌دهنده فرانت‌اند و طراح وب از رشت، ایران. از کنجکاوی‌های کودکی تا تخصص حرفه‌ای در توسعه وب، Next.js، React.js، WordPress، سئو و Tailwind CSS.",
+  authors: [
+    { name: "Ali Hooshangi", url: "https://portfolio-v2-orcin-phi.vercel.app" },
+  ],
   keywords: [
     "Ali Hooshangi",
+    "Ali Houshangi",
+    "علی هوشنگی",
     "Biography",
+    "بیوگرافی",
     "Frontend Developer",
     "React.js",
     "Next.js",
     "WordPress",
     "Web Designer",
-    "Rasht",
-    "Iran",
     "SEO",
-    "Web Development",
     "Tailwind CSS",
     "JavaScript",
     "TypeScript",
+    "Rasht",
+    "Iran",
+    "Portfolio",
+    "طراح سایت",
+    "توسعه‌دهنده فرانت‌اند",
+    "وبسایت شخصی",
   ],
-  authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#1a1a1a",
   openGraph: {
     title: "Ali Hooshangi Biography | Frontend Developer & Web Designer",
     description:
-      "Read the full biography of Ali Hooshangi, a frontend developer and web designer from Rasht, Iran. Learn about his journey from childhood curiosity to professional expertise in web development, Next.js, React.js, WordPress, and more.",
-    url: "https://yourwebsite.com/biography",
+      "Read the full biography of Ali Hooshangi, a frontend developer and web designer from Rasht, Iran. Explore his journey from childhood curiosity to professional expertise in web development, Next.js, React.js, WordPress, SEO, and Tailwind CSS. | بیوگرافی کامل علی هوشنگی، توسعه‌دهنده فرانت‌اند و طراح وب از رشت، ایران.",
+    url: "https://portfolio-v2-orcin-phi.vercel.app/biography",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/ali-Hooshangi-bio-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/ali-hooshangi-bio-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - Biography",
+        alt: "Ali Hooshangi - Biography | بیوگرافی علی هوشنگی",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ali Hooshangi Biography | Frontend Developer & Web Designer",
     description:
-      "Read the full biography of Ali Hooshangi, a frontend developer and web designer from Rasht, Iran. Learn about his journey from childhood curiosity to professional expertise in web development, Next.js, React.js, WordPress, and more.",
-    images: ["https://yourwebsite.com/images/ali-Hooshangi-bio-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Read the full biography of Ali Hooshangi, a frontend developer and web designer from Rasht, Iran. Explore his journey from childhood curiosity to professional expertise in web development, Next.js, React.js, WordPress, SEO, and Tailwind CSS. | بیوگرافی کامل علی هوشنگی، توسعه‌دهنده فرانت‌اند و طراح وب از رشت، ایران.",
+    images: [
+      "https://portfolio-v2-orcin-phi.vercel.app/images/ali-hooshangi-bio-og.jpg",
+    ],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

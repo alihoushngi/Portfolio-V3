@@ -2,49 +2,88 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Interests - Ali Hooshangi | Frontend Developer & Tech Enthusiast",
+  title:
+    "Interests & Passions - Ali Hooshangi | Frontend Developer & Tech Enthusiast | علایق و سرگرمی‌ها علی هوشنگی",
   description:
-    "Discover the interests and passions of Ali Hooshangi, including football, technology, video games, reading, travel, smart home projects, DIY electronics, and continuous learning.",
+    "Discover the interests and passions of Ali Hooshangi, including football, technology, video games, reading, travel, smart home projects, DIY electronics, and continuous learning. | علایق و سرگرمی‌های علی هوشنگی شامل فوتبال، فناوری، بازی‌های ویدیویی، مطالعه، سفر، پروژه‌های خانه هوشمند، الکترونیک DIY و یادگیری مستمر است.",
+  authors: [
+    { name: "Ali Hooshangi", url: "https://portfolio-v2-orcin-phi.vercel.app" },
+  ],
   keywords: [
     "Ali Hooshangi",
+    "Ali Houshangi",
+    "علی هوشنگی",
+    "علایق",
+    "سرگرمی‌ها",
     "Interests",
+    "Passions",
     "Football",
+    "Soccer",
     "Technology",
     "Gaming",
+    "Video Games",
     "Reading",
+    "Books",
     "Travel",
     "Smart Home",
     "DIY Projects",
+    "Electronics",
+    "Mentoring",
     "Education",
     "Web Development",
     "Frontend Developer",
+    "Next.js",
+    "React.js",
+    "WordPress",
   ],
-  authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#1a1a1a",
   openGraph: {
-    title: "Interests - Ali Hooshangi | Frontend Developer & Tech Enthusiast",
+    title:
+      "Interests & Passions - Ali Hooshangi | Frontend Developer & Tech Enthusiast",
     description:
-      "Discover the interests and passions of Ali Hooshangi, including football, technology, video games, reading, travel, smart home projects, DIY electronics, and continuous learning.",
-    url: "https://yourwebsite.com/interests",
+      "Discover the interests and passions of Ali Hooshangi, including football, technology, video games, reading, travel, smart home projects, DIY electronics, and continuous learning. | علایق و سرگرمی‌های علی هوشنگی شامل فوتبال، فناوری، بازی‌های ویدیویی، مطالعه، سفر، پروژه‌های خانه هوشمند، الکترونیک DIY و یادگیری مستمر است.",
+    url: "https://portfolio-v2-orcin-phi.vercel.app/interests",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/interests-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/interests-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - Interests and Passions",
+        alt: "Ali Hooshangi - Interests & Passions | علایق و سرگرمی‌ها",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Interests - Ali Hooshangi | Frontend Developer & Tech Enthusiast",
+    title:
+      "Interests & Passions - Ali Hooshangi | Frontend Developer & Tech Enthusiast",
     description:
-      "Discover the interests and passions of Ali Hooshangi, including football, technology, video games, reading, travel, smart home projects, DIY electronics, and continuous learning.",
-    images: ["https://yourwebsite.com/images/interests-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Discover the interests and passions of Ali Hooshangi, including football, technology, video games, reading, travel, smart home projects, DIY electronics, and continuous learning. | علایق و سرگرمی‌های علی هوشنگی شامل فوتبال، فناوری، بازی‌های ویدیویی، مطالعه، سفر، پروژه‌های خانه هوشمند، الکترونیک DIY و یادگیری مستمر است.",
+    images: [
+      "https://portfolio-v2-orcin-phi.vercel.app/images/interests-og.jpg",
+    ],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

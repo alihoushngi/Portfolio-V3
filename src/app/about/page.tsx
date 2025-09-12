@@ -3,47 +3,78 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us - Ali Hooshangi | Frontend Developer & Web Designer",
+  title:
+    "About Me - Ali Hooshangi | Frontend Developer & Web Designer | درباره علی هوشنگی",
   description:
-    "Discover Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in building high-performance, SEO-optimized websites and web applications using Next.js, React.js, and WordPress.",
+    "Ali Hooshangi – Frontend Developer & Web Designer with 6+ years of experience in building high-performance, SEO-optimized websites and web applications using Next.js, React.js, Tailwind CSS, and WordPress. | علی هوشنگی، توسعه‌دهنده فرانت‌اند و طراح وب با بیش از 6 سال تجربه در طراحی سایت‌های بهینه، واکنش‌گرا و سریع با استفاده از Next.js، React.js، Tailwind CSS و وردپرس.",
+  authors: [
+    { name: "Ali Hooshangi", url: "https://portfolio-v2-orcin-phi.vercel.app" },
+  ],
   keywords: [
     "Ali Hooshangi",
+    "Ali Houshangi",
+    "علی هوشنگی",
     "Frontend Developer",
-    "React.js",
-    "Next.js",
-    "WordPress",
-    "SEO",
+    "React.js Developer",
+    "Next.js Developer",
+    "WordPress Developer",
     "Web Designer",
+    "UI/UX Designer",
+    "SEO Expert",
     "Tailwind CSS",
     "JavaScript",
     "TypeScript",
+    "پورتفولیو وب",
+    "طراح سایت",
+    "توسعه‌دهنده فرانت‌اند",
+    "وبسایت شخصی",
   ],
-  authors: [{ name: "Ali Hooshangi", url: "https://yourwebsite.com" }],
+  robots: { index: true, follow: true },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#1a1a1a",
   openGraph: {
-    title: "About Us - Ali Hooshangi | Frontend Developer & Web Designer",
+    title: "About Me - Ali Hooshangi | Frontend Developer & Web Designer",
     description:
-      "Discover Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in building high-performance, SEO-optimized websites and web applications using Next.js, React.js, and WordPress.",
-    url: "https://yourwebsite.com/about",
+      "Ali Hooshangi – Frontend Developer & Web Designer with 6+ years of experience building high-performance, SEO-optimized websites and applications. | علی هوشنگی، توسعه‌دهنده فرانت‌اند و طراح وب با تجربه در طراحی سایت‌های سریع، بهینه و واکنش‌گرا.",
+    url: "https://portfolio-v2-orcin-phi.vercel.app/about",
     siteName: "Ali Hooshangi Portfolio",
+    type: "website",
+    locale: "fa_IR",
     images: [
       {
-        url: "https://yourwebsite.com/images/ali-Hooshangi-og.jpg",
+        url: "https://portfolio-v2-orcin-phi.vercel.app/images/ali-hooshangi-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Ali Hooshangi - Frontend Developer",
+        alt: "Ali Hooshangi - Frontend Developer & Web Designer",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us - Ali Hooshangi | Frontend Developer & Web Designer",
+    title: "About Me - Ali Hooshangi | Frontend Developer & Web Designer",
     description:
-      "Discover Ali Hooshangi, a frontend developer and web designer with 6+ years of experience in building high-performance, SEO-optimized websites and web applications using Next.js, React.js, and WordPress.",
-    images: ["https://yourwebsite.com/images/ali-Hooshangi-og.jpg"],
-    site: "@yourtwitterhandle",
-    creator: "@yourtwitterhandle",
+      "Ali Hooshangi – Frontend Developer & Web Designer with 6+ years of experience building high-performance, SEO-optimized websites and applications. | علی هوشنگی، توسعه‌دهنده فرانت‌اند و طراح وب با تجربه در طراحی سایت‌های سریع، بهینه و واکنش‌گرا.",
+    images: [
+      "https://portfolio-v2-orcin-phi.vercel.app/images/ali-hooshangi-og.jpg",
+    ],
+    site: "@AliHooshangi",
+    creator: "@AliHooshangi",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
   },
 };
 

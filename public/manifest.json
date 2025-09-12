@@ -1,10 +1,10 @@
 {
-  "name": "Next Base",
-  "short_name": "next-base",
+  "name": "Ali Hooshangi",
+  "short_name": "ali-hooshangi",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#317EFB",
+  "background_color": "#1D293D",
+  "theme_color": "#312C85",
   "description": "A powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.",
   "icons": [
     {
