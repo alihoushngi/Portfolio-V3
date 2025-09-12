@@ -11,10 +11,12 @@ const ProjectCard: FC<IProjectCardProps> = ({
   ProjectTitle,
   onClickButton,
   haveButton,
+  isLink,
 }) => {
   return (
     <Link
       href={ProjectLink}
+      target="_blank"
       className="flex flex-col w-full justify-start items-start gap-4 bg-Appearance-Slate-950 rounded-lg p-4 hover:bg-Appearance-Slate-800 transition-all ease-linear duration-200 max-md:gap-2"
     >
       <Image
@@ -30,7 +32,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
       <p className="text-1 font-light text-left tracking-tighter max-md:text-xs">
         {ProjectDescription}
       </p>
-      {haveButton && (
+      {!isLink && haveButton && (
         <Button
           onClick={onClickButton}
           classname="bg-Appearance-Slate-500 text-Appearance-Slate-900 w-full hover:bg-Appearance-Slate-200 hover:text-Appearance-Slate-950 rounded"

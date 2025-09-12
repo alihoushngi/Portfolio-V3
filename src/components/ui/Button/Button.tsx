@@ -21,6 +21,7 @@ const Button: FC<IButtonProps> = ({
       <Link
         className={`text-xs px-3 py-1 max-md:w-full max-md:px-1 rounded-md bg-Appearance-Slate-700 text-gray-200 hover:opacity-80 transition max-md:text-center ${classname && classname}`}
         href={LinkUrl || "#"}
+        target="_blank"
       >
         {children}
       </Link>

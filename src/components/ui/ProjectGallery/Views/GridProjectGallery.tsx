@@ -2,7 +2,7 @@
 
 import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
 import { IProjectCardProps } from "@/components/ui/ProjectCard/ProjectCard.type";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { FC } from "react";
 
 export interface GridProjectGalleryProps {
@@ -10,7 +10,6 @@ export interface GridProjectGalleryProps {
 }
 
 const GridProjectGallery: FC<GridProjectGalleryProps> = ({ list }) => {
-  const router = useRouter();
   const query = useSearchParams().get("category");
 
   const selectedCategories = query ? query.split(",") : [];
@@ -32,7 +31,7 @@ const GridProjectGallery: FC<GridProjectGalleryProps> = ({ list }) => {
             ProjectLink={item.ProjectLink || "#"}
             ProjectTitle={item.ProjectTitle}
             haveButton
-            onClickButton={() => router.push(item.ProjectTitle)}
+            isLink
             Category={item.Category}
           />
         </div>

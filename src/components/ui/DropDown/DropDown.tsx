@@ -119,7 +119,7 @@ const DropDown: FC<IDropDownProps> = ({
               <Link
                 href="mailto:aliihooshangi@gmail.com"
                 target="_blank"
-                className="flex items-center gap-3 text-1 text-Appearance-Slate-400 font-light py-2"
+                className="flex items-center gap-3 text-1 text-Appearance-Slate-500 hover:text-Appearance-Slate-300 transition-all duration-200 ease-linear font-light py-2"
               >
                 <RiMailFill />
                 aliihooshangi
@@ -127,7 +127,7 @@ const DropDown: FC<IDropDownProps> = ({
               <Link
                 href="tel:+989115447316"
                 target="_blank"
-                className="flex items-center gap-3 text-1 text-Appearance-Slate-400 font-light py-2"
+                className="flex items-center gap-3 text-1 text-Appearance-Slate-500 hover:text-Appearance-Slate-300 transition-all duration-200 ease-linear font-light py-2"
               >
                 <MdPhoneIphone />
                 +989115447316

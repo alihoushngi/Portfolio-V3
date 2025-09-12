@@ -8,4 +8,6 @@ export interface IProjectCardProps {
   onClickButton?: () => void;
   haveButton?: boolean;
   Category?: string;
+  isLink?: boolean;
+  LinkHref?: string;
 }

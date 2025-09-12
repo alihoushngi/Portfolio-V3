@@ -68,7 +68,7 @@ const FilterSelection: FC<IFilterSelectionProps> = ({
               {subItem.map((item, index) => (
                 <label
                   key={index}
-                  className="flex flex-row-reverse justify-between items-center gap-2 w-full"
+                  className="flex flex-row-reverse justify-between items-center gap-2 w-full text-Appearance-Slate-500 hover:text-Appearance-Slate-300 transition-all duration-200 ease-linear cursor-pointer"
                 >
                   <input
                     type="checkbox"
@@ -116,7 +116,7 @@ const FilterSelection: FC<IFilterSelectionProps> = ({
               <Link
                 href="mailto:aliihooshangi@gmail.com"
                 target="_blank"
-                className="flex items-center gap-3 text-1 text-Appearance-Slate-400 font-light py-2"
+                className="flex items-center gap-3 text-1 text-Appearance-Slate-500 hover:text-Appearance-Slate-300 transition-all duration-200 ease-linear font-light py-2"
               >
                 <RiMailFill />
                 aliihooshangi
@@ -124,7 +124,7 @@ const FilterSelection: FC<IFilterSelectionProps> = ({
               <Link
                 href="tel:+989115447316"
                 target="_blank"
-                className="flex items-center gap-3 text-1 text-Appearance-Slate-400 font-light py-2"
+                className="flex items-center gap-3 text-1 text-Appearance-Slate-500 hover:text-Appearance-Slate-300 transition-all duration-200 ease-linear font-light py-2"
               >
                 <MdPhoneIphone />
                 +989115447316
