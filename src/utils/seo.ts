@@ -36,7 +36,6 @@ export const defaultMetadata: Metadata = {
     nocache: false,
   },
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-  themeColor: "#312C85",
   openGraph: {
     type: "website",
     locale: "fa_IR",
