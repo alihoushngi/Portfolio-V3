@@ -17,7 +17,9 @@ const ListProjectGallery: FC<ListProjectGalleryProps> = ({ list }) => {
 
   const filteredList =
     selectedCategories.length > 0
-      ? list.filter((item) => selectedCategories.includes(item.Category))
+      ? list.filter((item) =>
+          selectedCategories.includes(item.Category ? item.Category : ""),
+        )
       : list;
   return (
     <div className="flex flex-col gap-4 w-full">

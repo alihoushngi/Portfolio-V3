@@ -17,7 +17,9 @@ const GridProjectGallery: FC<GridProjectGalleryProps> = ({ list }) => {
 
   const filteredList =
     selectedCategories.length > 0
-      ? list.filter((item) => selectedCategories.includes(item.Category))
+      ? list.filter((item) =>
+          selectedCategories.includes(item.Category ? item.Category : ""),
+        )
       : list;
 
   return (
