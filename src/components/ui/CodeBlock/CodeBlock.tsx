@@ -1,7 +1,7 @@
 "use client";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 interface CodeBlockProps {
   code: string;
@@ -12,13 +12,13 @@ const CodeBlock = ({ code, language = "javascript" }: CodeBlockProps) => {
   return (
     <SyntaxHighlighter
       language={language}
-      style={atomDark}
+      style={vscDarkPlus}
       customStyle={{
         margin: 0,
         padding: "16px",
         fontSize: "14px",
-        backgroundColor: "#020618",
-        borderRadius: "0 0 8px 8px",
+        backgroundColor: "transparent",
+        borderRadius: "8px",
         whiteSpace: "pre-wrap",
         wordBreak: "break-word",
         overflowWrap: "anywhere",
