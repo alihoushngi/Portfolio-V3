@@ -6,26 +6,26 @@ import bgBlurs from "../../../../public/Images/Main/backgroundBlurs.svg";
 const Main = () => {
   return (
     <div className="w-full h-full flex max-md:flex-col max-md:p-3 justify-between items-center max-md:relative md:max-w-[1200px] md:mx-auto ">
-      <div className="w-1/2 max-md:w-full max-md:px-6 h-full flex justify-center items-center flex-col gap-16 z-20">
-        <div className="mx-auto max-md:w-full max-md:flex max-md:flex-col max-md:gap-2">
-          <span className="text-3 text-Appearance-Slate-400 font-light">
+      <div className="w-1/2 max-md:w-full max-md:px-6 h-full flex justify-center items-center flex-col gap-16 z-20 max-md:gap-5">
+        <div className="mx-auto max-md:w-full max-md:flex max-md:flex-col max-md:gap-1">
+          <span className="text-3 text-Appearance-Slate-400 font-light max-md:text-xs">
             Hi all. I am
           </span>
-          <h1 className="text-9 text-Appearance-Slate-50 font-normal text-wrap max-md:text-7 max-md:leading-none">
+          <h1 className="text-9 text-Appearance-Slate-50 font-normal text-wrap max-md:text-5 max-md:leading-none">
             Ali Hooshangi
           </h1>
-          <h2 className="text-6 text-indigo-500 max-md:text-3">
+          <h2 className="text-6 text-indigo-500 max-md:text-1">
             {">"} Front-end developer
           </h2>
         </div>
-        <div className="mx-auto flex flex-col justify-start items-start gap-3 text-2 text-Appearance-Slate-400 font-light">
+        <div className="mx-auto flex flex-col justify-start items-start gap-3 text-2 text-Appearance-Slate-400 font-light max-md:gap-1">
           <span className="max-md:hidden">
             {"//"} complete the game to continue
           </span>
           <span className="max-md:text-xs">
             {"//"} find my profile on Github:
           </span>
-          <div className="flex justify-center items-start text-2 gap-3 max-md:flex-wrap max-md:justify-start max-md:text-xs font-light">
+          <div className="flex justify-center items-start text-2 gap-3 max-md:flex-wrap max-md:justify-start max-md:text-xs font-light max-md:gap-2">
             <span className="text-indigo-500">const</span>
             <span className="text-teal-400">githubLink</span>
             <span className="text-white">=</span>
@@ -54,7 +54,7 @@ const Main = () => {
         <SnakeGameBoard />
       </div>
 
-      <div className="w-full md:hidden flex justify-center items-center mt-6">
+      <div className="w-full md:hidden flex justify-center items-center mt-4">
         <SnakeGameBoard />
       </div>
     </div>

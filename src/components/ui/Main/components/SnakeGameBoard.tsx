@@ -26,24 +26,34 @@ const SnakeGameBoard = () => {
     left: 150,
   });
   const [gameMessage, setGameMessage] = useState<string | null>(null);
+  const [boardReady, setBoardReady] = useState(false);
 
-  // set initial pos
+  const cellSize = 10;
+
+  // init snake & food when board is ready
   useEffect(() => {
     if (gameBoardRef.current) {
       const h = gameBoardRef.current.clientHeight;
       const w = gameBoardRef.current.clientWidth;
-      setSnake([{ top: Math.floor(h / 2), left: Math.floor(w / 2) }]);
-      setSnakeFood({
-        top: Math.floor(Math.random() * (h - 30)) + 15,
-        left: Math.floor(Math.random() * (w - 30)) + 15,
-      });
+
+      if (h && w) {
+        const startTop = Math.floor(h / 2 / cellSize) * cellSize;
+        const startLeft = Math.floor(w / 2 / cellSize) * cellSize;
+
+        setSnake([{ top: startTop, left: startLeft }]);
+        setSnakeFood({
+          top: Math.floor(Math.random() * (h / cellSize)) * cellSize,
+          left: Math.floor(Math.random() * (w / cellSize)) * cellSize,
+        });
+        setBoardReady(true); // ✅ mark board as ready
+      }
     }
   }, []);
 
   // keyboard controls
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Enter") {
+      if (e.key === "Enter" && boardReady) {
         setIsStart("true");
       }
       if (e.key === "Escape") {
@@ -68,59 +78,80 @@ const SnakeGameBoard = () => {
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [isStart, direction]);
+  }, [isStart, direction, boardReady]);
+
+  const resetGame = () => {
+    if (!gameBoardRef.current) return;
+    const h = gameBoardRef.current.clientHeight;
+    const w = gameBoardRef.current.clientWidth;
+
+    const startTop = Math.floor(h / 2 / cellSize) * cellSize;
+    const startLeft = Math.floor(w / 2 / cellSize) * cellSize;
+
+    setSnake([{ top: startTop, left: startLeft }]);
+    setSnakeFood({
+      top: Math.floor(Math.random() * (h / cellSize)) * cellSize,
+      left: Math.floor(Math.random() * (w / cellSize)) * cellSize,
+    });
+    setSnakeFoodTrack(0);
+    setDirection(null);
+    setIsStart("false");
+    setGameMessage("");
+  };
 
   // move snake loop
   useEffect(() => {
-    if (isStart !== "true" || !direction) return;
+    if (isStart !== "true" || !direction || !boardReady) return;
 
     const interval = setInterval(() => {
       setSnake((prevSnake) => {
+        if (!gameBoardRef.current) return prevSnake;
+
+        const boardHeight =
+          Math.floor(gameBoardRef.current.clientHeight / cellSize) * cellSize;
+        const boardWidth =
+          Math.floor(gameBoardRef.current.clientWidth / cellSize) * cellSize;
+
+        if (boardHeight === 0 || boardWidth === 0) return prevSnake;
+
         const head = prevSnake[0];
         const newHead = { ...head };
 
-        if (direction === "UP") newHead.top -= 10;
-        if (direction === "DOWN") newHead.top += 10;
-        if (direction === "LEFT") newHead.left -= 10;
-        if (direction === "RIGHT") newHead.left += 10;
+        if (direction === "UP") newHead.top -= cellSize;
+        if (direction === "DOWN") newHead.top += cellSize;
+        if (direction === "LEFT") newHead.left -= cellSize;
+        if (direction === "RIGHT") newHead.left += cellSize;
 
-        // check eat food first
-        const newSnake = [newHead, ...prevSnake];
+        // check wall collision
         if (
-          Math.abs(newHead.top - snakeFood.top) < 10 &&
-          Math.abs(newHead.left - snakeFood.left) < 10
-        ) {
-          if (gameBoardRef.current) {
-            setSnakeFoodTrack(snakeFoodTrack + 1);
-            setSnakeFood({
-              top: Math.floor(
-                Math.random() * (gameBoardRef.current.clientHeight - 30) + 15,
-              ),
-              left: Math.floor(
-                Math.random() * (gameBoardRef.current.clientWidth - 30) + 15,
-              ),
-            });
-          }
-          // don't remove tail -> snake grows
-        } else {
-          newSnake.pop(); // remove last segment -> move snake
-        }
-
-        // check collision with wall
-        if (
-          gameBoardRef.current &&
-          (newHead.top < 0 ||
-            newHead.left < 0 ||
-            newHead.top >= gameBoardRef.current.clientHeight - 10 ||
-            newHead.left >= gameBoardRef.current.clientWidth - 10)
+          newHead.top < 0 ||
+          newHead.left < 0 ||
+          newHead.top >= boardHeight ||
+          newHead.left >= boardWidth
         ) {
           setGameMessage("You burned out! You hit the wall.");
-          setSnake([{ top: 100, left: 100 }]);
-          setSnakeFood({ top: 100, left: 100 });
-          setSnakeFoodTrack(0);
           setIsStart("false");
           setDirection(null);
+          resetGame();
           return prevSnake;
+        }
+
+        const newSnake = [newHead, ...prevSnake];
+
+        // check eat food
+        if (
+          Math.abs(newHead.top - snakeFood.top) < cellSize &&
+          Math.abs(newHead.left - snakeFood.left) < cellSize
+        ) {
+          setSnakeFoodTrack((prev) => prev + 1);
+          setSnakeFood({
+            top:
+              Math.floor(Math.random() * (boardHeight / cellSize)) * cellSize,
+            left:
+              Math.floor(Math.random() * (boardWidth / cellSize)) * cellSize,
+          });
+        } else {
+          newSnake.pop(); // move
         }
 
         // check collision with self
@@ -130,10 +161,9 @@ const SnakeGameBoard = () => {
           )
         ) {
           setGameMessage("You burned! You ate yourself.");
-          setSnake([{ top: 100, left: 100 }]);
-          setSnakeFoodTrack(0);
           setIsStart("false");
           setDirection(null);
+          resetGame();
           return prevSnake;
         }
 
@@ -142,13 +172,13 @@ const SnakeGameBoard = () => {
     }, 150);
 
     return () => clearInterval(interval);
-  }, [direction, isStart, snakeFood, snakeFoodTrack]);
+  }, [direction, isStart, snakeFood, boardReady]);
 
   // Show toast when gameMessage changes
   useEffect(() => {
     if (gameMessage) {
       toast.error(gameMessage);
-      const timer = setTimeout(() => setGameMessage(null), 2000); // Clear message after 2 seconds
+      const timer = setTimeout(() => setGameMessage(null), 2000);
       return () => clearTimeout(timer);
     }
   }, [gameMessage]);
@@ -164,7 +194,7 @@ const SnakeGameBoard = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-start items-start h-full gap-4 w-full max-w-[500px] rounded-lg border border-Appearance-Slate-700 p-4 md:p-7 bg-glass-gradient bg-opacity-70 shadow-inner-white backdrop-blur-60 z-20 relative">
+    <div className="flex flex-col md:flex-row justify-start items-start h-full gap-4 w-full max-w-[500px] rounded-lg border border-Appearance-Slate-700 p-4 md:p-7 bg-glass-gradient bg-opacity-70 shadow-inner-white backdrop-blur-60 z-20 relative max-md:gap-1">
       {/* corners */}
       <IoIosClose className="hidden md:block bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute top-3 left-3" />
       <IoIosClose className="hidden md:block bg-teal-950 text-teal-950 text-4 bg-bolt-radial shadow-bolt p-1 rounded-full absolute top-3 right-3" />
@@ -173,7 +203,7 @@ const SnakeGameBoard = () => {
 
       {/* Snake Game Board */}
       <div
-        className="bg-Appearance-Slate-800 rounded-lg relative overflow-hidden w-full h-[300px] md:w-[250px] md:h-full"
+        className="bg-Appearance-Slate-800 rounded-lg relative overflow-hidden w-full h-[200px] md:w-[250px] md:h-full"
         ref={gameBoardRef}
       >
         {/* food */}
@@ -207,8 +237,8 @@ const SnakeGameBoard = () => {
             )}
           </div>
         ))}
-        {isStart !== "true" && (
-          <div className="w-full bottom-6 absolute left-0 flex justify-center">
+        {isStart !== "true" && boardReady && (
+          <div className="w-full bottom-6 max-md:bottom-1 absolute left-0 flex justify-center">
             <button
               onClick={() => setIsStart("true")}
               className="bg-Primary-Orange-300_Main text-xs rounded-lg px-3 py-1 text-black"
@@ -233,28 +263,28 @@ const SnakeGameBoard = () => {
             <div>
               <IoMdArrowDropup
                 onClick={() => handleMove("UP")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
               />
             </div>
             <div className="flex justify-center items-center gap-3">
               <IoMdArrowDropleft
                 onClick={() => handleMove("LEFT")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
               />
               <IoMdArrowDropdown
                 onClick={() => handleMove("DOWN")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
               />
               <IoMdArrowDropright
                 onClick={() => handleMove("RIGHT")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
               />
             </div>
           </div>
         </div>
 
         {/* Food Left */}
-        <div className="flex flex-col justify-start items-start gap-1 w-full flex-wrap text-1 text-Appearance-Slate-50 font-light mt-6 p-3">
+        <div className="flex flex-col justify-start items-start gap-1 w-full flex-wrap text-1 text-Appearance-Slate-50 font-light mt-6 p-3 max-md:mt-2">
           <span>{"//"} food left</span>
           <div className="flex gap-3 w-full flex-wrap mt-5">
             {Array.from({ length: snakeFoodTrack }).map((_, idx) => (
