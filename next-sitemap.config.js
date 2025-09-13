@@ -2,11 +2,12 @@
 module.exports = {
   siteUrl: "https://www.alihoushangi.ir",
   generateRobotsTxt: true,
-  sitemapSize: 5000,
   changefreq: "daily",
+  priority: 0.7,
+  sitemapSize: 100000,
+  outDir: "./public",
   additionalPaths: async (config) => [
     await config.transform(config, "/custom-page"),
   ],
-  priority: 0.7,
   exclude: ["/admin/*", "/login"],
 };
