@@ -10,16 +10,6 @@ export const GalleryListEN = [
     ariaLabel: "Ali Houshangi creative website designer and SEO specialist",
   },
   {
-    src: "/Images/Personal/2.jpg",
-    alt: "Ali Houshangi WordPress developer custom themes",
-    ariaLabel: "Ali Houshangi WordPress developer and theme creator",
-  },
-  {
-    src: "/Images/Personal/3.jpg",
-    alt: "Ali Houshangi UI/UX designer website performance",
-    ariaLabel: "Ali Houshangi UI/UX expert optimizing web performance",
-  },
-  {
     src: "/Images/Personal/4.jpg",
     alt: "Ali Houshangi Next.js project developer",
     ariaLabel: "Ali Houshangi experienced Next.js project developer",
@@ -70,34 +60,14 @@ export const GalleryListEN = [
     ariaLabel: "Ali Houshangi creative projects in frontend development",
   },
   {
-    src: "/Images/Personal/14.jpg",
-    alt: "Ali Houshangi website speed optimization",
-    ariaLabel: "Ali Houshangi optimizing website performance and speed",
-  },
-  {
     src: "/Images/Personal/15.jpg",
     alt: "Ali Houshangi modern React websites",
     ariaLabel: "Ali Houshangi modern websites with React",
   },
   {
-    src: "/Images/Personal/16.jpg",
-    alt: "Ali Houshangi Persian web developer",
-    ariaLabel: "Ali Houshangi Iranian Persian web developer",
-  },
-  {
     src: "/Images/Personal/17.jpg",
     alt: "Ali Houshangi personal portfolio website",
     ariaLabel: "Personal portfolio of Ali Houshangi",
-  },
-  {
-    src: "/Images/Personal/18.jpg",
-    alt: "Ali Houshangi professional WordPress websites",
-    ariaLabel: "Ali Houshangi builds professional WordPress websites",
-  },
-  {
-    src: "/Images/Personal/19.jpg",
-    alt: "Ali Houshangi developer React Tailwind CSS",
-    ariaLabel: "Ali Houshangi React and Tailwind CSS developer",
   },
   {
     src: "/Images/Personal/20.jpg",
@@ -118,11 +88,6 @@ export const GalleryListEN = [
     src: "/Images/Personal/23.jpg",
     alt: "Ali Houshangi expert in responsive design",
     ariaLabel: "Ali Houshangi responsive design specialist",
-  },
-  {
-    src: "/Images/Personal/24.jpg",
-    alt: "Ali Houshangi experienced frontend developer",
-    ariaLabel: "Ali Houshangi frontend developer with experience",
   },
   {
     src: "/Images/Personal/25.jpg",
@@ -152,16 +117,6 @@ export const GalleryListFA = [
     src: "/Images/Personal/1.jpg",
     alt: "علی هوشنگی طراح سایت و متخصص سئو",
     ariaLabel: "علی هوشنگی طراحی وبسایت حرفه ای و بهینه سازی سئو",
-  },
-  {
-    src: "/Images/Personal/2.jpg",
-    alt: "علی هوشنگی توسعه دهنده وردپرس و قالب اختصاصی",
-    ariaLabel: "علی هوشنگی طراحی قالب وردپرس و توسعه وبسایت",
-  },
-  {
-    src: "/Images/Personal/3.jpg",
-    alt: "علی هوشنگی طراح رابط کاربری و بهینه سازی سرعت",
-    ariaLabel: "علی هوشنگی طراحی UI و افزایش سرعت وب",
   },
   {
     src: "/Images/Personal/4.jpg",
@@ -214,34 +169,14 @@ export const GalleryListFA = [
     ariaLabel: "کارهای خلاقانه فرانت اند علی هوشنگی",
   },
   {
-    src: "/Images/Personal/14.jpg",
-    alt: "علی هوشنگی بهینه سازی سرعت سایت",
-    ariaLabel: "بهبود سرعت وبسایت توسط علی هوشنگی",
-  },
-  {
     src: "/Images/Personal/15.jpg",
     alt: "علی هوشنگی طراحی سایت مدرن با React",
     ariaLabel: "وبسایت های مدرن ری‌اکت توسط علی هوشنگی",
   },
   {
-    src: "/Images/Personal/16.jpg",
-    alt: "علی هوشنگی برنامه نویس وب ایرانی",
-    ariaLabel: "علی هوشنگی توسعه دهنده وب در ایران",
-  },
-  {
     src: "/Images/Personal/17.jpg",
     alt: "وبسایت شخصی علی هوشنگی",
     ariaLabel: "نمونه وبسایت شخصی علی هوشنگی",
-  },
-  {
-    src: "/Images/Personal/18.jpg",
-    alt: "علی هوشنگی طراحی وبسایت وردپرسی",
-    ariaLabel: "وبسایت های وردپرسی حرفه ای توسط علی هوشنگی",
-  },
-  {
-    src: "/Images/Personal/19.jpg",
-    alt: "علی هوشنگی توسعه دهنده React و Tailwind",
-    ariaLabel: "پروژه های ری‌اکت و تیلویند علی هوشنگی",
   },
   {
     src: "/Images/Personal/20.jpg",
@@ -262,11 +197,6 @@ export const GalleryListFA = [
     src: "/Images/Personal/23.jpg",
     alt: "علی هوشنگی متخصص طراحی ریسپانسیو",
     ariaLabel: "طراحی ریسپانسیو توسط علی هوشنگی",
-  },
-  {
-    src: "/Images/Personal/24.jpg",
-    alt: "علی هوشنگی برنامه نویس فرانت اند با تجربه",
-    ariaLabel: "برنامه نویس حرفه ای وب علی هوشنگی",
   },
   {
     src: "/Images/Personal/25.jpg",
