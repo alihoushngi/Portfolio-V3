@@ -28,6 +28,10 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#317EFB" />
+        <meta
+          name="google-site-verification"
+          content="zpj4jbZ3DwkrSZ4zEAF67L7SLYR0H-GRhlGMZyXlsyg"
+        />
         <link rel="icon" href="/icons/icon-192x192.png" />
       </head>
       <body>
