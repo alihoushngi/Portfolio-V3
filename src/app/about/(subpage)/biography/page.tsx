@@ -140,19 +140,18 @@ const Biography = () => {
             pursued my bachelors studies while challenging myself to live
             independently, even briefly moving to{" "}
             <strong className="font-semibold">Birjand</strong>. This period was
-            significant not only academically but also personally, as I met{" "}
-            <strong className="font-semibold">Ayda</strong>, who is now my
+            significant not only academically but also personally, as I met my
             loving wife.
           </p>
 
           <p className="text-1 mb-4 max-md:text-xs">
             Upon returning to Rasht, I completed my{" "}
             <strong className="font-semibold">bachelors degree</strong> and got
-            married to Ayda. Later, I served in the military and, upon
-            completing my service, moved to{" "}
-            <strong className="font-semibold">Tehran</strong> to start my
-            professional career in web development. Today, I live independently,
-            continuously learning and growing in the field I love.
+            married. Later, I served in the military and, upon completing my
+            service, moved to <strong className="font-semibold">Tehran</strong>{" "}
+            to start my professional career in web development. Today, I live
+            independently, continuously learning and growing in the field I
+            love.
           </p>
 
           <p className="text-1 mb-4 max-md:text-xs">
