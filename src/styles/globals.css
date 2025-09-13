@@ -9,3 +9,22 @@ html {
 html.font-fa {
   font-family: var(--font-vazir);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #314158;
+  border-radius: 0px;
+  border: 2px solid #0f172b;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #314158 #0f172b;
+}

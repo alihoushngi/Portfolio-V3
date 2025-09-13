@@ -22,19 +22,18 @@ const GridProjectGallery: FC<GridProjectGalleryProps> = ({ list }) => {
       : list;
 
   return (
-    <div className="columns-1 sm:columns-2 md:columns-3 gap-4 h-[72vh] overflow-auto p-2 max-md:h-full">
+    <div className="grid grid-cols-3 gap-4 h-[85vh] overflow-auto p-4 max-md:grid-cols-1 max-md:h-full">
       {filteredList.map((item, index) => (
-        <div key={index} className="mb-4 break-inside-avoid">
-          <ProjectCard
-            ProjectDescription={item.ProjectDescription}
-            ProjectImage={item.ProjectImage}
-            ProjectLink={item.ProjectLink || "#"}
-            ProjectTitle={item.ProjectTitle}
-            haveButton
-            isLink
-            Category={item.Category}
-          />
-        </div>
+        <ProjectCard
+          key={index}
+          ProjectDescription={item.ProjectDescription}
+          ProjectImage={item.ProjectImage}
+          ProjectLink={item.ProjectLink || "#"}
+          ProjectTitle={item.ProjectTitle}
+          haveButton
+          isLink
+          Category={item.Category}
+        />
       ))}
     </div>
   );

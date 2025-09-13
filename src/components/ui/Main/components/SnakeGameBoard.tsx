@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import {
   IoIosClose,
@@ -50,11 +50,17 @@ const SnakeGameBoard = () => {
     }
   }, []);
 
+  const startGame = useCallback(() => {
+    if (!boardReady) return;
+    setIsStart("true");
+    setDirection("UP");
+  }, [boardReady]);
+
   // keyboard controls
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Enter" && boardReady) {
-        setIsStart("true");
+        startGame();
       }
       if (e.key === "Escape") {
         setIsStart("pause");
@@ -78,7 +84,7 @@ const SnakeGameBoard = () => {
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [isStart, direction, boardReady]);
+  }, [isStart, direction, boardReady, startGame]);
 
   const resetGame = () => {
     if (!gameBoardRef.current) return;
@@ -240,7 +246,7 @@ const SnakeGameBoard = () => {
         {isStart !== "true" && boardReady && (
           <div className="w-full bottom-6 max-md:bottom-1 absolute left-0 flex justify-center">
             <button
-              onClick={() => setIsStart("true")}
+              onClick={startGame}
               className="bg-Primary-Orange-300_Main text-xs rounded-lg px-3 py-1 text-black"
             >
               {`Tap to Start`}

@@ -10,7 +10,7 @@ const ProjectsLayout = ({ children }: { children: React.ReactNode }) => {
         <SecondarySideBar />
       </div>
       <FirstSideBar />
-      <div className="h-full">{children}</div>
+      <div className="h-full w-full">{children}</div>
     </section>
   );
 };
