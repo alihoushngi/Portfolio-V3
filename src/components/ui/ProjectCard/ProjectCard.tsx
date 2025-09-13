@@ -17,7 +17,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
     <Link
       href={ProjectLink}
       target="_blank"
-      className="flex flex-col w-full justify-start items-start gap-4 bg-Appearance-Slate-950 rounded-lg p-4 hover:bg-Appearance-Slate-800 transition-all ease-linear duration-200 max-md:gap-2"
+      className="flex flex-col w-full justify-start items-start gap-4 bg-Appearance-Slate-950 rounded-lg p-4 hover:bg-Appearance-Slate-800 transition-all ease-linear duration-200 max-md:gap-2 text-white"
     >
       <Image
         src={ProjectImage}

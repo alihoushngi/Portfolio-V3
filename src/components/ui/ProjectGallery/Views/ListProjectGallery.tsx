@@ -21,7 +21,7 @@ const ListProjectGallery: FC<ListProjectGalleryProps> = ({ list }) => {
         )
       : list;
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col gap-4 w-full h-[72vh] overflow-auto p-2 max-md:h-full">
       {filteredList.map((item, index) => (
         <ProjectCard
           key={index}
