@@ -4,6 +4,7 @@
 
 html {
   font-family: var(--font-fira-code);
+  background-color: #0f172b;
 }
 
 html.font-fa {
