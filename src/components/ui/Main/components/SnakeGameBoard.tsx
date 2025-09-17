@@ -269,21 +269,21 @@ const SnakeGameBoard = () => {
             <div>
               <IoMdArrowDropup
                 onClick={() => handleMove("UP")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-19 max-md:h-7"
               />
             </div>
             <div className="flex justify-center items-center gap-3">
               <IoMdArrowDropleft
                 onClick={() => handleMove("LEFT")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-19 max-md:h-7"
               />
               <IoMdArrowDropdown
                 onClick={() => handleMove("DOWN")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-19 max-md:h-7"
               />
               <IoMdArrowDropright
                 onClick={() => handleMove("RIGHT")}
-                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-10"
+                className="cursor-pointer bg-gray-950 border border-Appearance-Slate-700 rounded-lg text-7 text-white w-16 py-1 max-md:text-5 max-md:py-0 max-md:w-19 max-md:h-7"
               />
             </div>
           </div>
