@@ -3,8 +3,8 @@
   "short_name": "ali-hooshangi",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#1D293D",
-  "theme_color": "#0F172B",
+  "background_color": "#020618",
+  "theme_color": "#020618",
   "description": "Ali Hooshangi is a skilled Frontend Developer and Web Designer with over 6 years of professional experience. He specializes in building high-performance, responsive, and visually appealing websites using Next.js, React.js, Tailwind CSS, and WordPress. Ali has a strong focus on website optimization, security, and user experience, ensuring projects are fast, accessible, and SEO-friendly. Passionate about technology and continuous learning, he combines technical expertise with creative design to deliver modern and effective digital solutions.",
   "icons": [
     {
