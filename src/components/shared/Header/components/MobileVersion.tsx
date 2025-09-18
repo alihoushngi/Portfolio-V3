@@ -10,7 +10,9 @@ const MobileVersion = ({ pathname }: IHeaderProps) => {
 
   return (
     <div className="md:hidden flex justify-between items-center text-Appearance-Slate-400 text-1 w-full border-b border-Appearance-Slate-700 p-5">
-      <h1 className="">ali hooshangi</h1>
+      <h1 className="">
+        <Link href={"/"}>ali hooshangi</Link>
+      </h1>
       <IoIosMenu className="text-4" onClick={() => setIsOpen(true)} />
 
       {/* Menu */}

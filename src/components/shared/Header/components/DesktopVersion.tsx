@@ -6,7 +6,9 @@ const DesktopVersion = ({ pathname }: IHeaderProps) => {
   return (
     <div className="max-md:hidden w-full border-b border-Appearance-Slate-700 text-Appearance-Slate-400 text-1 flex justify-between items-center">
       <div className="w-full flex justify-start items-center gap-24">
-        <h1 className="py-4 px-7">ali hooshangi</h1>
+        <h1 className="py-4 px-7">
+          <Link href={"/"}>ali hooshangi</Link>
+        </h1>
         <div className="flex justify-center items-center">
           {firstMenuItems.map((item, index) => {
             if (!item.disable) {
