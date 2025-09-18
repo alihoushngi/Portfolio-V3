@@ -7,6 +7,20 @@ html {
   background-color: #020618;
 }
 
+html,
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
 html.font-fa {
   font-family: var(--font-vazir);
 }

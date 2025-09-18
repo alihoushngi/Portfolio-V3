@@ -7,6 +7,7 @@ import RegisterSW from "@/components/layout/RegisterSW";
 import I18nProvider from "@/components/shared/Lang/I18n/I18nProvider";
 
 import Layout from "@/components/layout/Layout";
+import NoRightClick from "@/components/layout/NoRightClick";
 import "@/styles/globals.css";
 import { defaultMetadata } from "@/utils/seo";
 import { Suspense } from "react";
@@ -40,6 +41,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <I18nProvider>
               <Layout>{children}</Layout>
+              <NoRightClick />
             </I18nProvider>
           </ThemeProvider>
         </Suspense>
