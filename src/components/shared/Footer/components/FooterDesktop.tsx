@@ -1,3 +1,4 @@
+import LanguageSwitcher from "@/components/shared/Lang/Language/LanguageSwitcher";
 import Link from "next/link";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
@@ -24,14 +25,17 @@ const FooterDesktop = () => {
           <BiLogoGmail />
         </Link>
       </div>
-      <Link
-        href="https://github.com/alihoushngi"
-        target="_blank"
-        className="flex justify-center items-center gap-3 border-l border-Appearance-Slate-700 py-4 px-7 transition-all duration-200 ease-in-out text-Appearance-Slate-400 hover:text-Primary-Orange-300_Main"
-      >
-        @alihoushngi
-        <FaGithub className="text-3 " />
-      </Link>
+      <div className="flex justify-end items-center">
+        <LanguageSwitcher />
+        <Link
+          href="https://github.com/alihoushngi"
+          target="_blank"
+          className="flex justify-center items-center gap-3 border-l border-Appearance-Slate-700 py-4 px-7 transition-all duration-200 ease-in-out text-Appearance-Slate-400 hover:text-Primary-Orange-300_Main"
+        >
+          @alihoushngi
+          <FaGithub className="text-3 " />
+        </Link>
+      </div>
     </div>
   );
 };

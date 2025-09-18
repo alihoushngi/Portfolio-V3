@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "react-hot-toast";
 
-import { FiraCodeFont, VazirFont } from "@/app/font";
+import { FiraCodeFont, PofakFont } from "@/app/font";
 import RegisterSW from "@/components/layout/RegisterSW";
 import I18nProvider from "@/components/shared/Lang/I18n/I18nProvider";
 
@@ -24,7 +24,7 @@ export default function RootLayout({
       lang="en"
       dir="ltr"
       suppressHydrationWarning
-      className={`${FiraCodeFont.variable} ${VazirFont.variable} dark:bg-slate-950`}
+      className={`${FiraCodeFont.variable} ${PofakFont.variable} dark:bg-slate-950`}
     >
       <head>
         <link rel="manifest" href="/manifest.json" />

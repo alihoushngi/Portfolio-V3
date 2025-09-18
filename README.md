@@ -47,7 +47,7 @@ Welcome to **Ali Hooshangi Portfolio**, a modern and fully responsive portfolio 
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/alihoushngi/ali-hooshangi-portfolio.git
+git clone https://github.com/alihoushngi/Portfolio-V3.git
 cd ali-hooshangi
 npm install
 npm run dev

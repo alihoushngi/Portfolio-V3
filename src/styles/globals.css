@@ -7,6 +7,10 @@ html {
   background-color: #020618;
 }
 
+html.font-fa {
+  font-family: var(--font-pofak);
+}
+
 html,
 body {
   -webkit-user-select: none;
@@ -19,10 +23,6 @@ img {
   -webkit-user-drag: none;
   user-drag: none;
   pointer-events: none;
-}
-
-html.font-fa {
-  font-family: var(--font-vazir);
 }
 
 ::-webkit-scrollbar {

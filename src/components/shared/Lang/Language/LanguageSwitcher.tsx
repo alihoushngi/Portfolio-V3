@@ -10,7 +10,6 @@ export default function LanguageSwitcher() {
     i18n.changeLanguage(newLang);
     if (typeof window !== "undefined") {
       document.documentElement.lang = newLang;
-      document.documentElement.dir = newLang === "fa" ? "rtl" : "ltr";
       document.documentElement.classList.remove("font-fa", "font-en");
       document.documentElement.classList.add(
         newLang === "fa" ? "font-fa" : "font-en",
@@ -23,7 +22,7 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={toggleLanguage}
-      className="px-2 py-0 pt-1 text-xl"
+      className="flex justify-center items-center gap-3 border-l border-Appearance-Slate-700 h-full py-2 px-7 text-5 transition-all duration-200 ease-in-out text-Appearance-Slate-400 hover:text-Primary-Orange-300_Main"
       aria-label="Change Language"
     >
       {isFa ? "🇬🇧" : "🇮🇷"}
